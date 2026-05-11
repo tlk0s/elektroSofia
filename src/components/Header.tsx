@@ -6,7 +6,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold text-blue-700">
-          Електротехник София
+          ⚡ Николов инжинеринг
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
           <Link href="/uslugi" className="text-gray-700 hover:text-blue-700 transition-colors">

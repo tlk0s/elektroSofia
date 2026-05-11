@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <p className="text-white font-bold text-lg mb-2">
-            Електротехник София — {NAP.address}
+            Николов инжинеринг — {NAP.address}
           </p>
           <a href={`tel:${PHONE}`} className="text-amber-400 font-bold mt-2 block hover:text-amber-300">
             {PHONE_DISPLAY}

@@ -6,7 +6,7 @@ export const PHONE_DISPLAY = '+359 88 888 8888'
 export const EMAIL = 'info@elektrotehnik-sofia.bg'
 
 export const NAP = {
-  name: 'Електротехник София',
+  name: 'Николов инжинеринг',
   address: 'гр. София 1000, ул. Примерна 1',
   phone: PHONE_DISPLAY,
   email: EMAIL,

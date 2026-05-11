@@ -4,7 +4,7 @@ import Header from '@/components/Header'
 describe('Header', () => {
   it('renders the site name', () => {
     render(<Header />)
-    expect(screen.getByText(/електротехник/i)).toBeInTheDocument()
+    expect(screen.getByText(/николов инжинеринг/i)).toBeInTheDocument()
   })
 
   it('renders Услуги nav link', () => {
