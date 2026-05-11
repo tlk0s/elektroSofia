@@ -34,6 +34,26 @@ export default function HomePage() {
       </section>
 
       <HowWeWork />
+
+      {/*
+       * TODO: Dynamic Google reviews — do this AFTER the domain is bought and connected.
+       *
+       * Steps:
+       *   1. Create a Google Cloud project at https://console.cloud.google.com
+       *   2. Enable "Places API" under APIs & Services → Library
+       *   3. Create an API key under APIs & Services → Credentials
+       *   4. Find the Place ID at https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder
+       *   5. Add two GitHub Actions secrets at https://github.com/tlk0s/elektroSofia/settings/secrets/actions:
+       *        GOOGLE_PLACES_API_KEY = AIzaSy...
+       *        GOOGLE_PLACE_ID       = ChIJ...
+       *   6. Add both to a local .env.local file (already in .gitignore):
+       *        GOOGLE_PLACES_API_KEY=AIzaSy...
+       *        GOOGLE_PLACE_ID=ChIJ...
+       *   7. Tell the developer to wire up the build-time fetch in scripts/generate-static-files.mjs
+       *      and pass the reviews as props here: <Reviews reviews={googleReviews} />
+       *
+       * Until then the component shows 4 hardcoded placeholder reviews.
+       */}
       <Reviews />
       <ServiceAreas />
 
