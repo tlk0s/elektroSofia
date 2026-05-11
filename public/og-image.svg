@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Accent bar bottom -->
+  <rect y="580" width="1200" height="50" fill="#f59e0b"/>
+
+  <!-- Lightning bolt icon -->
+  <text x="100" y="260" font-size="160" font-family="Arial, sans-serif">⚡</text>
+
+  <!-- Company name -->
+  <text x="100" y="340" font-size="64" font-weight="bold" font-family="Arial, sans-serif" fill="white">Николов инжинеринг</text>
+
+  <!-- Tagline -->
+  <text x="100" y="410" font-size="38" font-family="Arial, sans-serif" fill="#bfdbfe">Електротехник в София · 24/7 · Лицензиран</text>
+
+  <!-- Phone -->
+  <text x="100" y="490" font-size="44" font-weight="bold" font-family="Arial, sans-serif" fill="#fbbf24">+359 88 888 8888</text>
+
+  <!-- Domain -->
+  <text x="100" y="565" font-size="28" font-family="Arial, sans-serif" fill="#93c5fd">elektrotehnik-sofia.bg</text>
+</svg>

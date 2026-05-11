@@ -22,7 +22,17 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
     .map((slug) => services.find((s) => s.slug === slug))
     .filter(Boolean) as typeof services
 
-  // Safe: JSON.stringify of a static object built from content/services.json — no user input
+  // Safe: all schema objects are built from static content JSON — no user input
+  const breadcrumbSchemaJson = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Начало', item: 'https://elektrotehnik-sofia.bg/' },
+      { '@type': 'ListItem', position: 2, name: 'Услуги', item: 'https://elektrotehnik-sofia.bg/uslugi/' },
+      { '@type': 'ListItem', position: 3, name: service.title, item: `https://elektrotehnik-sofia.bg/uslugi/${service.slug}/` },
+    ],
+  })
+
   const faqSchemaJson = JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -35,6 +45,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchemaJson }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqSchemaJson }} />
 
       <div className="mx-auto max-w-4xl px-4 py-12">

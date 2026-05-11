@@ -5,6 +5,7 @@
 import { readFileSync, writeFileSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
+import sharp from 'sharp'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
@@ -111,3 +112,29 @@ ${allRoutes.map((r) => `- ${BASE_URL}${r.path}`).join('\n')}
 
 writeFileSync(join(outDir, 'llms.txt'), llmsTxt)
 console.log('✓ llms.txt written')
+
+// ─── robots.txt ──────────────────────────────────────────────────────────────
+
+const robotsTxt = `User-agent: *
+Allow: /
+
+Sitemap: ${BASE_URL}/sitemap.xml
+`
+
+writeFileSync(join(outDir, 'robots.txt'), robotsTxt)
+console.log('✓ robots.txt written')
+
+// ─── og-image.png ─────────────────────────────────────────────────────────────
+
+const svgPath = join(root, 'public', 'og-image.svg')
+const svgBuffer = readFileSync(svgPath)
+await sharp(svgBuffer).resize(1200, 630).png().toFile(join(outDir, 'og-image.png'))
+console.log('✓ og-image.png written')
+
+// ─── favicon.svg → favicon files ─────────────────────────────────────────────
+
+const faviconSvgPath = join(root, 'public', 'favicon.svg')
+const faviconBuffer = readFileSync(faviconSvgPath)
+await sharp(faviconBuffer).resize(32, 32).png().toFile(join(outDir, 'favicon.png'))
+await sharp(faviconBuffer).resize(180, 180).png().toFile(join(outDir, 'apple-touch-icon.png'))
+console.log('✓ favicon.png + apple-touch-icon.png written')

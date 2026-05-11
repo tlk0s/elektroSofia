@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   },
   description: `Лицензиран електротехник в София. Смяна на табло, нова инсталация, авариен електротехник 24/7. Обадете се: ${PHONE_DISPLAY}`,
   metadataBase: new URL(BASE_URL),
+  icons: {
+    icon: '/favicon.png',
+    apple: '/apple-touch-icon.png',
+  },
   other: {
     'geo.region': 'BG-SO',
     'geo.placename': 'Sofia',
@@ -26,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="bg">
       <head>
         <SchemaOrg />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
       </head>
       <body className={`${inter.className} bg-slate-50`}>
         <Header />
