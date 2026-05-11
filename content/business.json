@@ -1,0 +1,15 @@
+{
+  "name": "Николов инжинеринг",
+  "phone": "+359888888888",
+  "phoneDisplay": "+359 88 888 8888",
+  "email": "info@elektrotehnik-sofia.bg",
+  "address": "гр. София 1000, ул. Примерна 1",
+  "licenseNumber": "ЕТ-0001/2020",
+  "yearsExperience": "15+",
+  "clientsServed": "500+",
+  "workingHours": {
+    "weekdays": "Понеделник – Петък: 08:00 – 20:00",
+    "saturday": "Събота: 09:00 – 17:00",
+    "emergency": "Аварии: 24/7"
+  }
+}

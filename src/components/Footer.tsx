@@ -1,13 +1,14 @@
 import Link from 'next/link'
-import { NAP, PHONE, PHONE_DISPLAY } from '@/lib/metadata'
+import { NAP, PHONE, PHONE_DISPLAY, business } from '@/lib/metadata'
 
 export default function Footer() {
+  const { workingHours } = business
   return (
     <footer className="bg-gray-900 text-gray-300 pt-12 pb-6">
       <div className="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <p className="text-white font-bold text-lg mb-2">
-            Николов инжинеринг — {NAP.address}
+            {NAP.name} — {NAP.address}
           </p>
           <a href={`tel:${PHONE}`} className="text-amber-400 font-bold mt-2 block hover:text-amber-300">
             {PHONE_DISPLAY}
@@ -16,9 +17,9 @@ export default function Footer() {
         </div>
         <div>
           <p className="text-white font-semibold mb-2">Работно време</p>
-          <p className="text-sm">Понеделник – Петък: 08:00 – 20:00</p>
-          <p className="text-sm">Събота: 09:00 – 17:00</p>
-          <p className="text-sm text-amber-400">Аварии: 24/7</p>
+          <p className="text-sm">{workingHours.weekdays}</p>
+          <p className="text-sm">{workingHours.saturday}</p>
+          <p className="text-sm text-amber-400">{workingHours.emergency}</p>
         </div>
         <div>
           <p className="text-white font-semibold mb-2">Бързи връзки</p>

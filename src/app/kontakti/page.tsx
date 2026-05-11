@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { generateMeta, NAP, PHONE, PHONE_DISPLAY, EMAIL } from '@/lib/metadata'
+import { generateMeta, NAP, PHONE, PHONE_DISPLAY, EMAIL, business } from '@/lib/metadata'
 
 export const metadata: Metadata = generateMeta({
   title: 'Контакти | Николов инжинеринг | Електротехник София',
@@ -8,6 +8,7 @@ export const metadata: Metadata = generateMeta({
 })
 
 export default function KontaktiPage() {
+  const { workingHours } = business
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <h1 className="text-4xl font-bold text-gray-900 mb-6">Контакти</h1>
@@ -29,9 +30,9 @@ export default function KontaktiPage() {
           </div>
           <div>
             <p className="text-sm text-gray-500 mb-1">Работно време</p>
-            <p className="text-gray-700">Понеделник – Петък: 08:00 – 20:00</p>
-            <p className="text-gray-700">Събота: 09:00 – 17:00</p>
-            <p className="text-amber-600 font-semibold">Аварии: 24 часа / 7 дни</p>
+            <p className="text-gray-700">{workingHours.weekdays}</p>
+            <p className="text-gray-700">{workingHours.saturday}</p>
+            <p className="text-amber-600 font-semibold">{workingHours.emergency}</p>
           </div>
         </div>
         <div className="rounded-xl overflow-hidden shadow-lg" style={{ minHeight: '280px' }}>

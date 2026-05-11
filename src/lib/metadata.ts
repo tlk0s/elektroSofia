@@ -1,16 +1,39 @@
+import { readFileSync } from 'fs'
+import { join } from 'path'
 import type { Metadata } from 'next'
 
+interface BusinessContent {
+  name: string
+  phone: string
+  phoneDisplay: string
+  email: string
+  address: string
+  licenseNumber: string
+  yearsExperience: string
+  clientsServed: string
+  workingHours: { weekdays: string; saturday: string; emergency: string }
+}
+
+function loadBusiness(): BusinessContent {
+  const raw = readFileSync(join(process.cwd(), 'content/business.json'), 'utf-8')
+  return JSON.parse(raw)
+}
+
+const business = loadBusiness()
+
 export const BASE_URL = 'https://elektrotehnik-sofia.bg'
-export const PHONE = '+359888888888'
-export const PHONE_DISPLAY = '+359 88 888 8888'
-export const EMAIL = 'info@elektrotehnik-sofia.bg'
+export const PHONE = business.phone
+export const PHONE_DISPLAY = business.phoneDisplay
+export const EMAIL = business.email
 
 export const NAP = {
-  name: 'Николов инжинеринг',
-  address: 'гр. София 1000, ул. Примерна 1',
-  phone: PHONE_DISPLAY,
-  email: EMAIL,
+  name: business.name,
+  address: business.address,
+  phone: business.phoneDisplay,
+  email: business.email,
 }
+
+export { business }
 
 export function generateMeta({
   title,
