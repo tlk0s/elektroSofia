@@ -2,13 +2,21 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 import { PHONE_DISPLAY } from '../lib/metadata'
 
+export interface FaqItem {
+  question: string
+  answer: string
+}
+
 export interface Service {
   slug: string
   title: string
   shortDescription: string
   description: string
+  longDescription: string
   icon: string
   features: string[]
+  faq: FaqItem[]
+  relatedServices: string[]
   metaTitle: string
   metaDescription: string
 }
