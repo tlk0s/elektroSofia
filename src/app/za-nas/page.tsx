@@ -2,7 +2,8 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { generateMeta, PHONE, PHONE_DISPLAY } from '@/lib/metadata'
+import { generateMeta, PHONE_DISPLAY } from '@/lib/metadata'
+import CallButtons from '@/components/CallButtons'
 
 interface ZaNasContent {
   heading: string
@@ -55,10 +56,10 @@ export default function ZaNasPage() {
         </div>
       </div>
       <div className="bg-blue-700 text-white rounded-xl p-6 text-center">
-        <p className="font-semibold mb-3">{c.ctaText}</p>
-        <a href={`tel:${PHONE}`} className="inline-block bg-amber-500 hover:bg-amber-400 text-white font-bold px-8 py-3 rounded-lg transition-colors">
-          📞 {PHONE_DISPLAY}
-        </a>
+        <p className="font-semibold mb-4">{c.ctaText}</p>
+        <div className="flex flex-wrap justify-center gap-3">
+          <CallButtons size="lg" />
+        </div>
       </div>
     </div>
   )

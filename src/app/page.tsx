@@ -6,7 +6,8 @@ import HowWeWork from '@/components/HowWeWork'
 import Reviews from '@/components/Reviews'
 import ServiceAreas from '@/components/ServiceAreas'
 import { services } from '@/data/services'
-import { generateMeta, PHONE, PHONE_DISPLAY } from '@/lib/metadata'
+import { generateMeta, PHONE_DISPLAY } from '@/lib/metadata'
+import CallButtons from '@/components/CallButtons'
 
 export const metadata: Metadata = generateMeta({
   title: 'Николов инжинеринг | Електротехник София | Смяна Табло, Авариен 24/7',
@@ -78,16 +79,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Bottom CTA */}
       <section className="bg-blue-700 text-white py-14 text-center px-4">
         <h2 className="text-3xl font-bold mb-3">Имате нужда от електротехник?</h2>
         <p className="text-blue-100 mb-6">Обадете се сега — отговаряме веднага, работим 24/7</p>
-        <a
-          href={`tel:${PHONE}`}
-          className="inline-block bg-amber-500 hover:bg-amber-400 text-white font-extrabold text-xl px-10 py-4 rounded-xl transition-colors"
-        >
-          📞 {PHONE_DISPLAY}
-        </a>
+        <div className="flex flex-wrap justify-center gap-3">
+          <CallButtons size="lg" />
+        </div>
       </section>
     </>
   )

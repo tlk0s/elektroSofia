@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import ServiceCard from '@/components/ServiceCard'
 import { services } from '@/data/services'
-import { generateMeta, PHONE, PHONE_DISPLAY } from '@/lib/metadata'
+import { generateMeta, PHONE_DISPLAY } from '@/lib/metadata'
+import CallButtons from '@/components/CallButtons'
 
 export const metadata: Metadata = generateMeta({
   title: 'Електрически услуги София | Николов инжинеринг',
@@ -51,9 +52,9 @@ export default function UslugiPage() {
         <div className="bg-blue-50 rounded-2xl p-8 text-center">
           <p className="text-lg font-semibold text-gray-900 mb-2">Не намирате услугата? Обадете се!</p>
           <p className="text-gray-500 text-sm mb-4">Консултираме безплатно и даваме оферта след оглед</p>
-          <a href={`tel:${PHONE}`} className="inline-block bg-amber-500 text-white font-bold px-8 py-3 rounded-lg hover:bg-amber-400 transition-colors">
-            📞 {PHONE_DISPLAY}
-          </a>
+          <div className="flex flex-wrap justify-center gap-3">
+            <CallButtons size="lg" />
+          </div>
         </div>
       </div>
     </>

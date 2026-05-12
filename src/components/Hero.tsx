@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs'
 import { join } from 'path'
 import Image from 'next/image'
-import { PHONE, PHONE_DISPLAY } from '@/lib/metadata'
+import CallButtons from '@/components/CallButtons'
 
 interface HeroContent {
   headline: string
@@ -28,12 +28,8 @@ export default function Hero() {
           </h1>
           <p className="text-xl text-blue-100 mb-2">{c.subheadline}</p>
           <p className="text-blue-200 mb-8">{c.description}</p>
-          <a
-            href={`tel:${PHONE}`}
-            className="inline-block bg-amber-500 hover:bg-amber-400 text-white font-extrabold text-xl px-8 py-4 rounded-xl shadow-lg transition-colors"
-          >
-            {c.ctaButton} — {PHONE_DISPLAY}
-          </a>
+          <p className="text-blue-100 font-semibold mb-3">{c.ctaButton}</p>
+          <CallButtons size="lg" />
         </div>
         <div className="flex-shrink-0 w-72 h-72 relative rounded-2xl overflow-hidden shadow-2xl">
           <Image

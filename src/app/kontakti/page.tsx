@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { generateMeta, NAP, PHONE, PHONE_DISPLAY, EMAIL, business } from '@/lib/metadata'
+import { generateMeta, NAP, PHONE_DISPLAY, EMAIL, business } from '@/lib/metadata'
+import CallButtons from '@/components/CallButtons'
 
 export const metadata: Metadata = generateMeta({
   title: 'Контакти | Николов инжинеринг | Електротехник София',
@@ -15,10 +16,8 @@ export default function KontaktiPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
         <div className="space-y-6">
           <div>
-            <p className="text-sm text-gray-500 mb-1">Телефон</p>
-            <a href={`tel:${PHONE}`} className="text-2xl font-extrabold text-blue-700 hover:text-blue-600">
-              {PHONE_DISPLAY}
-            </a>
+            <p className="text-sm text-gray-500 mb-3">Телефон</p>
+            <CallButtons size="sm" vertical />
           </div>
           <div>
             <p className="text-sm text-gray-500 mb-1">Имейл</p>

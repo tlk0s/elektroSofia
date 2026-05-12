@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { services, getServiceBySlug } from '@/data/services'
-import { PHONE, PHONE_DISPLAY } from '@/lib/metadata'
+import CallButtons from '@/components/CallButtons'
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }))
@@ -68,12 +68,9 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         <p className="text-gray-600 text-lg mb-6 max-w-2xl">{service.description}</p>
 
         {/* Primary CTA */}
-        <a
-          href={`tel:${PHONE}`}
-          className="inline-block bg-amber-500 hover:bg-amber-400 text-white font-bold px-8 py-4 rounded-xl text-lg mb-10 transition-colors"
-        >
-          📞 Обади се сега — {PHONE_DISPLAY}
-        </a>
+        <div className="flex flex-wrap gap-3 mb-10">
+          <CallButtons size="lg" />
+        </div>
 
         {/* Long description — split on blank lines to render as paragraphs */}
         <div className="mb-10">
@@ -135,12 +132,9 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         <div className="bg-blue-700 text-white rounded-xl p-6 text-center">
           <p className="font-semibold mb-1">Имате въпрос или искате оферта?</p>
           <p className="text-blue-200 text-sm mb-4">Отговаряме веднага — работим 24/7</p>
-          <a
-            href={`tel:${PHONE}`}
-            className="inline-block bg-amber-500 hover:bg-amber-400 text-white font-bold px-8 py-3 rounded-lg transition-colors"
-          >
-            📞 {PHONE_DISPLAY}
-          </a>
+          <div className="flex flex-wrap justify-center gap-3">
+            <CallButtons size="lg" />
+          </div>
         </div>
       </div>
     </>

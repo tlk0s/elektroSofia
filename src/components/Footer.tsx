@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { NAP, PHONE, PHONE_DISPLAY, business } from '@/lib/metadata'
+import { NAP, business } from '@/lib/metadata'
+import CallButtons from '@/components/CallButtons'
 
 export default function Footer() {
   const { workingHours } = business
@@ -7,13 +8,11 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-300 pt-12 pb-6">
       <div className="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <p className="text-white font-bold text-lg mb-2">
+          <p className="text-white font-bold text-lg mb-3">
             {NAP.name} — {NAP.address}
           </p>
-          <a href={`tel:${PHONE}`} className="text-amber-400 font-bold mt-2 block hover:text-amber-300">
-            {PHONE_DISPLAY}
-          </a>
-          <a href={`mailto:${NAP.email}`} className="text-sm hover:text-white">{NAP.email}</a>
+          <CallButtons size="sm" vertical />
+          <a href={`mailto:${NAP.email}`} className="text-sm hover:text-white mt-2 block">{NAP.email}</a>
         </div>
         <div>
           <p className="text-white font-semibold mb-2">Работно време</p>
