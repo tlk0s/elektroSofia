@@ -8,6 +8,8 @@ import ServiceAreas from '@/components/ServiceAreas'
 import { services } from '@/data/services'
 import { generateMeta, PHONE_DISPLAY } from '@/lib/metadata'
 import CallButtons from '@/components/CallButtons'
+import RecentProjects from '@/components/RecentProjects'
+import { gallery } from '@/data/gallery'
 
 export const metadata: Metadata = generateMeta({
   title: 'Николов инжинеринг | Електротехник София | Смяна Табло, Авариен 24/7',
@@ -16,6 +18,7 @@ export const metadata: Metadata = generateMeta({
 })
 
 export default function HomePage() {
+  const recentProjects = gallery.slice(0, 3)
   return (
     <>
       <Hero />
@@ -35,6 +38,8 @@ export default function HomePage() {
       </section>
 
       <HowWeWork />
+
+      <RecentProjects projects={recentProjects} />
 
       {/*
        * TODO: Dynamic Google reviews — do this AFTER the domain is bought and connected.
