@@ -34,3 +34,26 @@ describe('ServiceCard', () => {
     expect(screen.getByRole('link')).toHaveAttribute('href', '/uslugi/test-service')
   })
 })
+
+const emergencyService: Service = {
+  slug: 'avariyen-elektrotehnik-sofia',
+  title: 'Авариен електротехник 24/7',
+  shortDescription: 'Спешна помощ при авария',
+  description: 'Авариен електротехник в София',
+  icon: '🚨',
+  features: [],
+  metaTitle: 'Авариен | SEO',
+  metaDescription: 'SEO описание',
+}
+
+describe('ServiceCard — emergency variant', () => {
+  it('shows 24/7 badge for emergency service', () => {
+    render(<ServiceCard service={emergencyService} />)
+    expect(screen.getByText('24/7')).toBeInTheDocument()
+  })
+
+  it('does not show 24/7 badge for regular service', () => {
+    render(<ServiceCard service={{ ...emergencyService, slug: 'other-service' }} />)
+    expect(screen.queryByText('24/7')).not.toBeInTheDocument()
+  })
+})
