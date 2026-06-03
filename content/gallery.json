@@ -1,0 +1,75 @@
+{
+  "projects": [
+    {
+      "slug": "nova-instalaciya-lyulin-2024",
+      "title": "Нова инсталация — жк Люлин",
+      "description": "Цялостна нова електрическа инсталация в 3-стаен апартамент в жк Люлин, София. Подмяна на стара инсталация с нова по БДС EN 60364, ново табло Legrand с диференциална защита, 14 контура в гофрирани тръби.",
+      "metaTitle": "Нова инсталация жк Люлин 2024 | Галерия | Николов инжинеринг",
+      "metaDescription": "Снимки от изграждане на нова електрическа инсталация в апартамент в жк Люлин, София. Ново табло Legrand, кабели в тръби, диференциална защита.",
+      "date": "2024-03",
+      "service": "nova-instalaciya-sofia",
+      "coverImage": "galeria/nova-instalaciya-lyulin-2024/cover.jpg",
+      "images": [
+        {
+          "file": "galeria/nova-instalaciya-lyulin-2024/cover.jpg",
+          "alt": "Ново електрическо табло Legrand след монтаж — жк Люлин",
+          "caption": "Новото табло Legrand с диференциална защита след монтаж"
+        },
+        {
+          "file": "galeria/nova-instalaciya-lyulin-2024/kabeli-stena.jpg",
+          "alt": "Кабели в гофрирани тръби вградени в стена",
+          "caption": "Кабели NYM 2.5мм² в гофрирани тръби преди шпакловка"
+        },
+        {
+          "file": "galeria/nova-instalaciya-lyulin-2024/tabelo-predi.jpg",
+          "alt": "Старото табло с топящи се предпазители преди подмяна",
+          "caption": "Старото табло преди подмяна — топящи се предпазители без заземяване"
+        }
+      ]
+    },
+    {
+      "slug": "smyana-tabla-mladost-2024",
+      "title": "Смяна на табло — жк Младост",
+      "description": "Подмяна на старо табло с бобини в апартамент в жк Младост 3. Ново табло ABB с 12 автомата, диференциална защита 30mA и главен прекъсвач. Работата отне 4 часа.",
+      "metaTitle": "Смяна на табло жк Младост 2024 | Галерия | Николов инжинеринг",
+      "metaDescription": "Снимки от смяна на електрическо табло в апартамент в жк Младост, София. Ново табло ABB с диференциална защита.",
+      "date": "2024-05",
+      "service": "smyana-tabla-sofia",
+      "coverImage": "galeria/smyana-tabla-mladost-2024/cover.jpg",
+      "images": [
+        {
+          "file": "galeria/smyana-tabla-mladost-2024/cover.jpg",
+          "alt": "Ново табло ABB след монтаж — жк Младост",
+          "caption": "Новото табло ABB с диференциална защита и 12 автомата"
+        },
+        {
+          "file": "galeria/smyana-tabla-mladost-2024/staro-tabelo.jpg",
+          "alt": "Старото табло с бобини преди подмяна — жк Младост",
+          "caption": "Старото табло с бобини — без заземяване и без диференциална защита"
+        }
+      ]
+    },
+    {
+      "slug": "led-osvetlenie-ofis-2024",
+      "title": "LED осветление — офис Витоша",
+      "description": "Монтаж на LED осветление в офис от 120 кв.м в района на Витоша. 24 броя LED панели 36W с висок CRI 90+, свързани на 4 контура с диммери. Икономия на ток 75% спрямо старото флуоресцентно осветление.",
+      "metaTitle": "LED осветление офис Витоша 2024 | Галерия | Николов инжинеринг",
+      "metaDescription": "Снимки от монтаж на LED осветление в офис в района на Витоша, София. 24 LED панела, CRI 90+, диммери.",
+      "date": "2024-06",
+      "service": "montaj-osvetlenie-sofia",
+      "coverImage": "galeria/led-osvetlenie-ofis-2024/cover.jpg",
+      "images": [
+        {
+          "file": "galeria/led-osvetlenie-ofis-2024/cover.jpg",
+          "alt": "LED панели монтирани в окачен таван на офис",
+          "caption": "24 броя LED панели 36W CRI90+ след монтаж"
+        },
+        {
+          "file": "galeria/led-osvetlenie-ofis-2024/dimeri.jpg",
+          "alt": "Диммерни ключове за LED осветление в офис",
+          "caption": "Диммерни ключове Legrand Celiane за всеки осветителен контур"
+        }
+      ]
+    }
+  ]
+}
