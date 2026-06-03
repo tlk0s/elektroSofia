@@ -109,6 +109,22 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </div>
         </div>
 
+        {/* Emergency CTA — shown on all services except the emergency one itself */}
+        {service.slug !== 'avariyen-elektrotehnik-sofia' && (
+          <div className="bg-red-700 text-white rounded-xl p-6 mb-10">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-2xl">🚨</span>
+              <h2 className="text-xl font-bold">Имате авария точно сега?</h2>
+            </div>
+            <p className="text-red-100 text-sm mb-4">
+              Реагираме до 60 минути — денонощно, 24/7, включително събота и неделя
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <CallButtons size="lg" />
+            </div>
+          </div>
+        )}
+
         {/* Related services */}
         {related.length > 0 && (
           <div className="mb-10">
