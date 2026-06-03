@@ -23,12 +23,14 @@ interface GalleryJson {
   projects: GalleryProject[]
 }
 
-export function loadGallery(): GalleryProject[] {
+function loadGallery(): GalleryProject[] {
   const raw = readFileSync(join(process.cwd(), 'content/gallery.json'), 'utf-8')
   const { projects } = JSON.parse(raw) as GalleryJson
   return projects
 }
 
+export const gallery: GalleryProject[] = loadGallery()
+
 export function getProjectBySlug(slug: string): GalleryProject | undefined {
-  return loadGallery().find((p) => p.slug === slug)
+  return gallery.find((p) => p.slug === slug)
 }

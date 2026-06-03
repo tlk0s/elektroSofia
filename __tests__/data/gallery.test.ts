@@ -1,29 +1,28 @@
-import { loadGallery, getProjectBySlug } from '@/data/gallery'
+import { gallery, getProjectBySlug } from '@/data/gallery'
 
-describe('loadGallery', () => {
+describe('gallery', () => {
   it('returns array of projects', () => {
-    const projects = loadGallery()
-    expect(Array.isArray(projects)).toBe(true)
-    expect(projects.length).toBeGreaterThan(0)
+    expect(Array.isArray(gallery)).toBe(true)
+    expect(gallery.length).toBeGreaterThan(0)
   })
 
   it('each project has required fields', () => {
-    const projects = loadGallery()
-    for (const p of projects) {
+    for (const p of gallery) {
       expect(p.slug).toBeTruthy()
       expect(p.title).toBeTruthy()
       expect(p.description).toBeTruthy()
       expect(p.metaTitle).toBeTruthy()
       expect(p.metaDescription).toBeTruthy()
       expect(p.date).toBeTruthy()
+      expect(p.service).toBeTruthy()
       expect(p.coverImage).toBeTruthy()
       expect(Array.isArray(p.images)).toBe(true)
     }
   })
 
   it('each image has file, alt, caption', () => {
-    const projects = loadGallery()
-    for (const p of projects) {
+    for (const p of gallery) {
+      expect(p.images.length).toBeGreaterThan(0)
       for (const img of p.images) {
         expect(img.file).toBeTruthy()
         expect(img.alt).toBeTruthy()
