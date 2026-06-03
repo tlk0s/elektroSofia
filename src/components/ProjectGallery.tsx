@@ -9,7 +9,7 @@ interface Props {
   title: string
 }
 
-export default function ProjectGallery({ images, title }: Props) {
+export default function ProjectGallery({ images }: Props) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const close = useCallback(() => setActiveIndex(null), [])
