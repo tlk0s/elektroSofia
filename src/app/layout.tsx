@@ -4,7 +4,8 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import SchemaOrg from '@/components/SchemaOrg'
-import { BASE_URL, PHONE_DISPLAY } from '@/lib/metadata'
+import EmergencyBar from '@/components/EmergencyBar'
+import { BASE_URL, PHONE, PHONE_DISPLAY } from '@/lib/metadata'
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
@@ -32,10 +33,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SchemaOrg />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
       </head>
-      <body className={`${inter.className} bg-slate-50`}>
+      <body className={`${inter.className} bg-slate-50 pb-20`}>
         <Header />
         <main>{children}</main>
         <Footer />
+        <EmergencyBar phone={PHONE} phoneDisplay={PHONE_DISPLAY} />
       </body>
     </html>
   )
