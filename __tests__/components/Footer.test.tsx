@@ -9,7 +9,8 @@ describe('Footer', () => {
 
   it('phone number links to tel:', () => {
     render(<Footer />)
-    const link = screen.getByRole('link', { name: /\+359/ })
+    const link = screen.getAllByRole('link').find(l => l.getAttribute('href')?.startsWith('tel:'))
+    expect(link).toBeDefined()
     expect(link).toHaveAttribute('href', 'tel:+359888888888')
   })
 

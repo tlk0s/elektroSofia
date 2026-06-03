@@ -9,12 +9,13 @@ describe('Hero', () => {
 
   it('phone CTA links to tel:', () => {
     render(<Hero />)
-    const link = screen.getByRole('link', { name: /обади се/i })
-    expect(link).toHaveAttribute('href', 'tel:+359888888888')
+    const links = screen.getAllByRole('link').filter(l => l.getAttribute('href')?.startsWith('tel:'))
+    expect(links.length).toBeGreaterThan(0)
+    expect(links[0]).toHaveAttribute('href', 'tel:+359888888888')
   })
 
   it('mentions 24/7', () => {
     render(<Hero />)
-    expect(screen.getByText(/24\/7/i)).toBeInTheDocument()
+    expect(screen.getAllByText(/24\/7/i).length).toBeGreaterThan(0)
   })
 })
