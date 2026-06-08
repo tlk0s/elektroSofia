@@ -9,7 +9,23 @@
       "date": "2026-06",
       "service": "smyana-tabla-sofia",
       "coverImage": "galeria/smyana-tabla-lozenetc-2026/cover.jpg",
-      "images": []
+      "images": [
+        {
+          "file": "galeria/smyana-tabla-lozenetc-2026/staro-tabla-predi-podmyana-lozenetc.jpg",
+          "alt": "Старо електрическо табло преди подмяна — хаотични кабели, Лозенец София",
+          "caption": "Старото табло преди подмяна — хаотични кабели и смесени марки автомати без заземяване"
+        },
+        {
+          "file": "galeria/smyana-tabla-lozenetc-2026/novo-tabla-montaj-chnt-legrand-lozenetc.jpg",
+          "alt": "Ново апартаментно табло по време на монтаж — CHNT автомати и Legrand RCD защита",
+          "caption": "По време на монтажа — CHNT NXB-63 автомати и Legrand диференциална защита 32A наредени на DIN шина"
+        },
+        {
+          "file": "galeria/smyana-tabla-lozenetc-2026/cover.jpg",
+          "alt": "Завършено ново електрическо табло с CHNT автомати и Legrand RCD — Лозенец София",
+          "caption": "Готовото табло — 10 автомата CHNT C10/C16, Legrand DX³ диференциална защита, всички кабели наредени и обозначени"
+        }
+      ]
     },
     {
       "slug": "zapechatane-kabeli-smola",
