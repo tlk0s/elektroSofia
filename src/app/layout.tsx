@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import SchemaOrg from '@/components/SchemaOrg'
 import EmergencyBar from '@/components/EmergencyBar'
 import { BASE_URL, PHONE, PHONE_DISPLAY } from '@/lib/metadata'
+import { BASE_PATH } from '@/lib/asset-path'
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
@@ -17,8 +18,8 @@ export const metadata: Metadata = {
   description: `Лицензиран електротехник в София. Смяна на табло, нова инсталация, авариен електротехник 24/7. Обадете се: ${PHONE_DISPLAY}`,
   metadataBase: new URL(BASE_URL),
   icons: {
-    icon: '/favicon.png',
-    apple: '/apple-touch-icon.png',
+    icon: `${BASE_PATH}/favicon.png`,
+    apple: `${BASE_PATH}/apple-touch-icon.png`,
   },
   other: {
     'geo.region': 'BG-SO',
@@ -31,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="bg">
       <head>
         <SchemaOrg />
-        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+        <link rel="sitemap" type="application/xml" href={`${BASE_PATH}/sitemap.xml`} />
       </head>
       <body className={`${inter.className} bg-slate-50 pb-20`}>
         <Header />
