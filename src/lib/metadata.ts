@@ -2,6 +2,8 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 import type { Metadata } from 'next'
 
+export { assetPath, BASE_PATH } from './asset-path'
+
 interface BusinessContent {
   name: string
   phone: string

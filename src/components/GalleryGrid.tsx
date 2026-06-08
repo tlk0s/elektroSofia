@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import type { GalleryProject } from '@/data/gallery'
+import { assetPath } from '@/lib/metadata'
 
 function imageCount(n: number): string {
   if (n === 1) return '1 снимка'
@@ -34,7 +35,7 @@ export default function GalleryGrid({ projects }: { projects: GalleryProject[] }
         >
           <div className="relative h-52 bg-gray-100">
             <Image
-              src={`/${project.coverImage}`}
+              src={assetPath(project.coverImage)}
               alt={project.images[0]?.alt ?? project.title}
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-300"

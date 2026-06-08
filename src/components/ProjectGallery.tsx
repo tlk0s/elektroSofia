@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import type { GalleryImage } from '@/data/gallery'
+import { assetPath } from '@/lib/asset-path'
 
 interface Props {
   images: GalleryImage[]
@@ -45,7 +46,7 @@ export default function ProjectGallery({ images }: Props) {
             aria-label={img.alt}
           >
             <Image
-              src={`/${img.file}`}
+              src={assetPath(img.file)}
               alt={img.alt}
               fill
               className="object-cover"
@@ -67,7 +68,7 @@ export default function ProjectGallery({ images }: Props) {
           >
             <div className="relative aspect-video bg-black rounded-xl overflow-hidden">
               <Image
-                src={`/${images[activeIndex].file}`}
+                src={assetPath(images[activeIndex].file)}
                 alt={images[activeIndex].alt}
                 fill
                 className="object-contain"

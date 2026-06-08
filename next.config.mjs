@@ -12,6 +12,9 @@ const nextConfig = {
   // _next/static/ assets resolve correctly. Unset locally (Docker/dev).
   basePath: isProd ? `/${repoName}` : '',
   assetPrefix: isProd ? `/${repoName}/` : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? `/${repoName}` : '',
+  },
 }
 
 export default nextConfig

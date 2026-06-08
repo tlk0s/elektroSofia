@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import type { GalleryProject } from '@/data/gallery'
+import { assetPath } from '@/lib/metadata'
 
 export default function RecentProjects({ projects }: { projects: GalleryProject[] }) {
   if (projects.length === 0) return null
@@ -30,7 +31,7 @@ export default function RecentProjects({ projects }: { projects: GalleryProject[
             >
               <div className="relative h-48 bg-gray-100">
                 <Image
-                  src={`/${project.coverImage}`}
+                  src={assetPath(project.coverImage)}
                   alt={project.images[0]?.alt ?? project.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
