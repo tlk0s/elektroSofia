@@ -9,7 +9,38 @@
       "date": "2026-06",
       "service": "kontakti-klyuchove-sofia",
       "coverImage": "galeria/montaj-kontakti-klyuchove-mladost-2026/cover.jpg",
-      "images": []
+      "images": [
+        {
+          "file": "galeria/montaj-kontakti-klyuchove-mladost-2026/konzolni-kutii-kabeli-stena.jpg",
+          "alt": "Конзолни кутии монтирани в стена с изведени кабели — етапна инсталация Младост",
+          "caption": "Етап 1 — конзолни кутии фиксирани в стената, кабелите NYM изведени и готови за свързване"
+        },
+        {
+          "file": "galeria/montaj-kontakti-klyuchove-mladost-2026/ramka-schneider-kabeli-gotovi.jpg",
+          "alt": "Монтажна рамка Schneider Electric на конзолни кутии с наредени кабели",
+          "caption": "Етап 2 — монтажната рамка Schneider поставена, кабелите наредени и готови за свързване към механизмите"
+        },
+        {
+          "file": "galeria/montaj-kontakti-klyuchove-mladost-2026/mehanizmi-schneider-postaveni-ramka.jpg",
+          "alt": "Механизми Schneider Electric поставени на монтажна рамка преди затваряне",
+          "caption": "Етап 3 — механизмите Schneider закрепени на рамката, жиците свързани към клемите"
+        },
+        {
+          "file": "galeria/montaj-kontakti-klyuchove-mladost-2026/mehanizmi-schneider-zatvoreni.jpg",
+          "alt": "Двоен контакт Schneider Electric затворен на рамката преди поставяне на капака",
+          "caption": "Етап 4 — механизмите затворени, готови за финалния капак"
+        },
+        {
+          "file": "galeria/montaj-kontakti-klyuchove-mladost-2026/kontakti-cherni-ip44-bez-kapaci.jpg",
+          "alt": "Черни двойни контакти IP44 без капаци — финален монтаж баня Младост",
+          "caption": "Етап 5 — черните IP44 контакти монтирани, преди поставяне на защитните капаци"
+        },
+        {
+          "file": "galeria/montaj-kontakti-klyuchove-mladost-2026/cover.jpg",
+          "alt": "Завършени черни двойни контакти IP44 с капаци — монтаж Schneider Electric Младост София",
+          "caption": "Готово — черни двойни контакти Schneider IP44 с капаци, водоустойчиви за баня или тераса"
+        }
+      ]
     },
     {
       "slug": "smyana-tabla-lozenetc-2026",
