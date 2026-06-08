@@ -11,19 +11,39 @@
       "coverImage": "galeria/zapechatane-kabeli-smola/cover.jpg",
       "images": [
         {
+          "file": "galeria/zapechatane-kabeli-smola/kutia-kabeli-gofrirani-trubi.jpg",
+          "alt": "Разклонителна кутия в земята с кабели в гофрирани тръби — градинска инсталация",
+          "caption": "Разклонителна кутия в изкопа — кабелите в гофрирани тръби преди свързване"
+        },
+        {
+          "file": "galeria/zapechatane-kabeli-smola/svarzване-zici-klemi-kutia.jpg",
+          "alt": "Свързани жици с водоустойчиви клеми в разклонителна кутия",
+          "caption": "Жиците свързани с водоустойчиви клеми — готови за заливане с епоксидна смола"
+        },
+        {
+          "file": "galeria/zapechatane-kabeli-smola/kabeli-kutia-detail-predi-zalivane.jpg",
+          "alt": "Детайл на кабели и клеми в кутия преди заливане с смола",
+          "caption": "Детайл преди заливане — всички кабели наредени и закрепени с кабелни връзки"
+        },
+        {
+          "file": "galeria/zapechatane-kabeli-smola/zatvorena-kutia-gotova-za-zalivane.jpg",
+          "alt": "Затворена кабелна кутия с клеми готова за заливане с епоксидна смола",
+          "caption": "Кутията затворена и готова за заливане — клемите са фиксирани"
+        },
+        {
+          "file": "galeria/zapechatane-kabeli-smola/dozirаne-smola-kantar.jpg",
+          "alt": "Дозиране на двукомпонентна епоксидна смола на кантар за точно смесване",
+          "caption": "Дозиране на смолата на кантар — точното съотношение е ключово за втвърдяването"
+        },
+        {
+          "file": "galeria/zapechatane-kabeli-smola/zalivane-smola-kutia.jpg",
+          "alt": "Заливане на разклонителна кутия с течна епоксидна смола",
+          "caption": "Заливане — смолата запълва всяка кухина и обгражда кабелите напълно"
+        },
+        {
           "file": "galeria/zapechatane-kabeli-smola/cover.jpg",
-          "alt": "Кабелна кутия запечатана с епоксидна смола — водоустойчива външна инсталация",
-          "caption": "Готовото запечатване — кутията е напълно запълнена с епоксидна смола"
-        },
-        {
-          "file": "galeria/zapechatane-kabeli-smola/svarzване-zici.jpg",
-          "alt": "Свързване на жици с дозови клеми преди заливане с смола",
-          "caption": "Свързване на жиците с дозови клеми преди заливане"
-        },
-        {
-          "file": "galeria/zapechatane-kabeli-smola/zalivane-smola.jpg",
-          "alt": "Заливане на кабелна кутия с течна епоксидна смола",
-          "caption": "Заливане с течна епоксидна смола — запечатва всички кухини около кабелите"
+          "alt": "Готова запечатана кабелна кутия с втвърдена епоксидна смола в земята",
+          "caption": "Готово — кутията запечатана с втвърдена смола, водоустойчива за десетилетия"
         }
       ]
     },

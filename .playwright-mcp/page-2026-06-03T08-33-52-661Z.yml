@@ -1,0 +1,218 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "⚡ Николов инжинеринг" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "Услуги" [ref=e6] [cursor=pointer]:
+          - /url: /uslugi/
+        - link "За нас" [ref=e7] [cursor=pointer]:
+          - /url: /za-nas/
+        - link "Контакти" [ref=e8] [cursor=pointer]:
+          - /url: /kontakti/
+      - link "+359 88 888 8888" [ref=e9] [cursor=pointer]:
+        - /url: tel:+359888888888
+  - main [ref=e10]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - heading "Електротехник в София" [level=1] [ref=e14]
+        - paragraph [ref=e15]: Бърза помощ 24/7 · Лицензиран · Гарантирана работа
+        - paragraph [ref=e16]: Смяна на табло, нова инсталация, авариен електротехник и още.
+        - paragraph [ref=e17]: Обади се сега
+        - generic [ref=e18]:
+          - 'link "Обади се: +359 88 888 8888" [ref=e19] [cursor=pointer]':
+            - /url: tel:+359888888888
+            - text: 📞 Обади се — 24/7
+          - 'link "Спешно обаждане — Авария: +359 88 888 8888" [ref=e20] [cursor=pointer]':
+            - /url: tel:+359888888888
+            - text: 🆘 АВАРИЯ
+          - 'link "Обади се чрез Viber: +359 88 888 8888" [ref=e21] [cursor=pointer]':
+            - /url: viber://chat?number=%2B359888888888
+            - img [ref=e22]
+          - 'link "Обади се чрез WhatsApp: +359 88 888 8888" [ref=e24] [cursor=pointer]':
+            - /url: https://wa.me/359888888888
+            - img [ref=e25]
+      - img "Лицензиран електротехник в София" [ref=e28]
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - paragraph [ref=e32]: 500+
+        - paragraph [ref=e33]: Доволни клиента
+      - generic [ref=e34]:
+        - paragraph [ref=e35]: 15+
+        - paragraph [ref=e36]: Години опит
+      - generic [ref=e37]:
+        - paragraph [ref=e38]: Лицензиран
+        - paragraph [ref=e39]: Електротехник
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: 24/7
+        - paragraph [ref=e42]: Аварийна помощ
+    - generic [ref=e44]:
+      - heading "Нашите услуги" [level=2] [ref=e45]
+      - paragraph [ref=e46]: Пълен спектър от електротехнически услуги в София
+      - generic [ref=e47]:
+        - link "24/7 🚨 Авариен електротехник 24/7 Спешна помощ при токов удар, скъсана фаза или авария Обади се сега →" [ref=e48] [cursor=pointer]:
+          - /url: /uslugi/avariyen-elektrotehnik-sofia/
+          - generic [ref=e49]: 24/7
+          - text: 🚨
+          - heading "Авариен електротехник 24/7" [level=3] [ref=e51]
+          - paragraph [ref=e52]: Спешна помощ при токов удар, скъсана фаза или авария
+          - generic [ref=e53]: Обади се сега →
+        - link "⚡ Смяна на табло Подмяна и модернизация на ел. табла в жилища и офиси Научи повече →" [ref=e54] [cursor=pointer]:
+          - /url: /uslugi/smyana-tabla-sofia/
+          - text: ⚡
+          - heading "Смяна на табло" [level=3] [ref=e55]
+          - paragraph [ref=e56]: Подмяна и модернизация на ел. табла в жилища и офиси
+          - generic [ref=e57]: Научи повече →
+        - link "🔧 Нова електрическа инсталация Цялостна нова електрика при ремонт или ново строителство Научи повече →" [ref=e58] [cursor=pointer]:
+          - /url: /uslugi/nova-instalaciya-sofia/
+          - text: 🔧
+          - heading "Нова електрическа инсталация" [level=3] [ref=e59]
+          - paragraph [ref=e60]: Цялостна нова електрика при ремонт или ново строителство
+          - generic [ref=e61]: Научи повече →
+        - link "💡 Монтаж на осветление Монтаж на лампи, луни, LED осветление и ел. инсталация Научи повече →" [ref=e62] [cursor=pointer]:
+          - /url: /uslugi/montaj-osvetlenie-sofia/
+          - text: 💡
+          - heading "Монтаж на осветление" [level=3] [ref=e63]
+          - paragraph [ref=e64]: Монтаж на лампи, луни, LED осветление и ел. инсталация
+          - generic [ref=e65]: Научи повече →
+        - link "🔌 Контакти и ключове Смяна и монтаж на контакти, ключове и разклонителни кутии Научи повече →" [ref=e66] [cursor=pointer]:
+          - /url: /uslugi/kontakti-klyuchove-sofia/
+          - text: 🔌
+          - heading "Контакти и ключове" [level=3] [ref=e67]
+          - paragraph [ref=e68]: Смяна и монтаж на контакти, ключове и разклонителни кутии
+          - generic [ref=e69]: Научи повече →
+        - link "🏭 Промишлени обекти Електроинсталации за офиси, магазини и промишлени помещения Научи повече →" [ref=e70] [cursor=pointer]:
+          - /url: /uslugi/promishleni-obekti-sofia/
+          - text: 🏭
+          - heading "Промишлени обекти" [level=3] [ref=e71]
+          - paragraph [ref=e72]: Електроинсталации за офиси, магазини и промишлени помещения
+          - generic [ref=e73]: Научи повече →
+    - generic [ref=e75]:
+      - heading "Как работим" [level=2] [ref=e76]
+      - list [ref=e77]:
+        - listitem [ref=e78]:
+          - generic [ref=e79]: "1"
+          - heading "Обаждане" [level=3] [ref=e80]
+          - paragraph [ref=e81]: Обаждате се на нашия телефон. Описвате проблема — отговаряме веднага.
+        - listitem [ref=e82]:
+          - generic [ref=e83]: "2"
+          - heading "Оглед" [level=3] [ref=e84]
+          - paragraph [ref=e85]: Идваме на адрес, правим оглед и даваме точна оферта без скрити такси.
+        - listitem [ref=e86]:
+          - generic [ref=e87]: "3"
+          - heading "Изпълнение" [level=3] [ref=e88]
+          - paragraph [ref=e89]: Изпълняваме работата чисто и в срок. Издаваме протокол и даваме гаранция.
+    - generic [ref=e91]:
+      - heading "Отзиви от клиенти" [level=2] [ref=e92]
+      - generic [ref=e93]:
+        - blockquote [ref=e94]:
+          - paragraph [ref=e95]: ★★★★★
+          - paragraph [ref=e96]: Много доволен от работата! Смениха ми таблото за 2 часа, чисто и точно. Ще ги препоръчам на всички.
+          - generic [ref=e97]: — Иван П.
+        - blockquote [ref=e98]:
+          - paragraph [ref=e99]: ★★★★★
+          - paragraph [ref=e100]: Обадих се за авария в събота вечер — дойдоха за 45 минути. Отстраниха проблема веднага. Страхотна реакция!
+          - generic [ref=e101]: — Мария Г.
+        - blockquote [ref=e102]:
+          - paragraph [ref=e103]: ★★★★★
+          - paragraph [ref=e104]: Изградиха цялата нова инсталация при ремонт на апартамента ни. Работят прецизно, спазиха срока и бюджета.
+          - generic [ref=e105]: — Петър Д.
+        - blockquote [ref=e106]:
+          - paragraph [ref=e107]: ★★★★★
+          - paragraph [ref=e108]: Монтираха LED осветление в офиса ни. Много добра консултация и качествена работа. Препоръчвам!
+          - generic [ref=e109]: — Елена С.
+    - generic [ref=e111]:
+      - heading "Зони на обслужване в София" [level=2] [ref=e112]
+      - paragraph [ref=e113]: Обслужваме всички квартали на София. Бърза реакция навсякъде в града.
+      - list [ref=e114]:
+        - listitem [ref=e115]: Люлин
+        - listitem [ref=e116]: Младост
+        - listitem [ref=e117]: Витоша
+        - listitem [ref=e118]: Надежда
+        - listitem [ref=e119]: Красно село
+        - listitem [ref=e120]: Лозенец
+        - listitem [ref=e121]: Овча купел
+        - listitem [ref=e122]: Студентски град
+        - listitem [ref=e123]: Банишора
+        - listitem [ref=e124]: Оборище
+        - listitem [ref=e125]: Сердика
+        - listitem [ref=e126]: Слатина
+        - listitem [ref=e127]: Искър
+        - listitem [ref=e128]: Дружба
+    - generic [ref=e130]:
+      - heading "Електротехник в София — защо Николов инжинеринг?" [level=2] [ref=e131]
+      - generic [ref=e132]:
+        - paragraph [ref=e133]: Търсите надежден електротехник в София за смяна на табло, нова инсталация или авариен ремонт? Николов инжинеринг работи в столицата от над 15 години и е изпълнил стотици обекта — от смяна на контакт в апартамент до цялостна електроинсталация на търговски обект.
+        - paragraph [ref=e134]: "Всяка работа изпълняваме по БДС EN 60364 — действащия стандарт за ниско напрежение в България. Използваме качествени материали от водещи марки: Legrand, Schneider Electric, ABB, Hager. Издаваме протокол за изпълнена работа и даваме гаранция на всеки обект."
+        - paragraph [ref=e135]: Работим в всички квартали на София — Люлин, Младост, Витоша, Надежда, Красно село, Лозенец, Овча купел, Студентски град и другите. Аварийният ни екип е на разположение 24 часа в денонощието, 7 дни в седмицата, с реакция до 60 минути.
+        - paragraph [ref=e136]: Обадете се за безплатна консултация и оглед. Даваме точна оферта преди да започнем работа — без изненади и скрити такси.
+    - generic [ref=e137]:
+      - heading "Имате нужда от електротехник?" [level=2] [ref=e138]
+      - paragraph [ref=e139]: Обадете се сега — отговаряме веднага, работим 24/7
+      - generic [ref=e141]:
+        - 'link "Обади се: +359 88 888 8888" [ref=e142] [cursor=pointer]':
+          - /url: tel:+359888888888
+          - text: 📞 Обади се — 24/7
+        - 'link "Спешно обаждане — Авария: +359 88 888 8888" [ref=e143] [cursor=pointer]':
+          - /url: tel:+359888888888
+          - text: 🆘 АВАРИЯ
+        - 'link "Обади се чрез Viber: +359 88 888 8888" [ref=e144] [cursor=pointer]':
+          - /url: viber://chat?number=%2B359888888888
+          - img [ref=e145]
+        - 'link "Обади се чрез WhatsApp: +359 88 888 8888" [ref=e147] [cursor=pointer]':
+          - /url: https://wa.me/359888888888
+          - img [ref=e148]
+  - contentinfo [ref=e150]:
+    - generic [ref=e151]:
+      - generic [ref=e152]:
+        - paragraph [ref=e153]: Николов инжинеринг — гр. София 1000, ул. Примерна 1
+        - generic [ref=e154]:
+          - 'link "Обади се: +359 88 888 8888" [ref=e155] [cursor=pointer]':
+            - /url: tel:+359888888888
+            - text: 📞 Обади се — 24/7
+          - 'link "Спешно обаждане — Авария: +359 88 888 8888" [ref=e156] [cursor=pointer]':
+            - /url: tel:+359888888888
+            - text: 🆘 АВАРИЯ
+          - 'link "Обади се чрез Viber: +359 88 888 8888" [ref=e157] [cursor=pointer]':
+            - /url: viber://chat?number=%2B359888888888
+            - img [ref=e158]
+          - 'link "Обади се чрез WhatsApp: +359 88 888 8888" [ref=e160] [cursor=pointer]':
+            - /url: https://wa.me/359888888888
+            - img [ref=e161]
+        - link "info@elektrotehnik-sofia.bg" [ref=e163] [cursor=pointer]:
+          - /url: mailto:info@elektrotehnik-sofia.bg
+      - generic [ref=e164]:
+        - paragraph [ref=e165]: Работно време
+        - paragraph [ref=e166]: "Понеделник – Петък: 08:00 – 20:00"
+        - paragraph [ref=e167]: "Събота: 09:00 – 17:00"
+        - paragraph [ref=e168]: "Аварии: 24/7"
+      - generic [ref=e169]:
+        - paragraph [ref=e170]: Бързи връзки
+        - list [ref=e171]:
+          - listitem [ref=e172]:
+            - link "Услуги" [ref=e173] [cursor=pointer]:
+              - /url: /uslugi/
+          - listitem [ref=e174]:
+            - link "За нас" [ref=e175] [cursor=pointer]:
+              - /url: /za-nas/
+          - listitem [ref=e176]:
+            - link "Контакти" [ref=e177] [cursor=pointer]:
+              - /url: /kontakti/
+    - generic [ref=e178]: © 2026 Всички права запазени.
+  - alert [ref=e179]
+  - complementary "Авариен контакт" [ref=e180]:
+    - generic [ref=e181]:
+      - generic [ref=e182]:
+        - generic [ref=e183]: ОНЛАЙН 24/7
+        - generic [ref=e185]: Авария? Реагираме до 60 мин — денонощно
+      - generic [ref=e186]:
+        - 'link "Обади се: +359 88 888 8888" [ref=e187] [cursor=pointer]':
+          - /url: tel:+359888888888
+          - text: 📞 Обади се — 24/7
+        - 'link "Спешно обаждане — Авария: +359 88 888 8888" [ref=e188] [cursor=pointer]':
+          - /url: tel:+359888888888
+          - text: 🆘 АВАРИЯ
+        - 'link "WhatsApp: +359 88 888 8888" [ref=e189] [cursor=pointer]':
+          - /url: https://wa.me/359888888888
+          - img [ref=e190]
+        - button "Затвори аварийната лента" [ref=e192] [cursor=pointer]: ×
