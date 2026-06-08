@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { services, getServiceBySlug } from '@/data/services'
+import { BASE_URL } from '@/lib/metadata'
 import CallButtons from '@/components/CallButtons'
 
 export function generateStaticParams() {
@@ -11,7 +12,11 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const service = getServiceBySlug(params.slug)
   if (!service) return {}
-  return { title: service.metaTitle, description: service.metaDescription }
+  return {
+    title: service.metaTitle,
+    description: service.metaDescription,
+    alternates: { canonical: `${BASE_URL}/uslugi/${params.slug}/` },
+  }
 }
 
 export default function ServicePage({ params }: { params: { slug: string } }) {

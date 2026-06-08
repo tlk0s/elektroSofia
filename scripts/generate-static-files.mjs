@@ -20,6 +20,7 @@ const BASE_URL = 'https://elektrotehnik-sofia.bg'
 const business = read('business.json')
 const hero = read('hero.json')
 const services = read('services.json')
+const gallery = read('gallery.json')
 const zaНас = read('za-nas.json')
 const howWeWork = read('how-we-work.json')
 const areas = read('service-areas.json')
@@ -41,7 +42,16 @@ const serviceRoutes = services.services.map((s) => ({
   changefreq: 'monthly',
 }))
 
-const allRoutes = [...staticRoutes, ...serviceRoutes]
+const galleryRoutes = [
+  { path: '/galeria/', priority: '0.8', changefreq: 'monthly' },
+  ...gallery.projects.map((p) => ({
+    path: `/galeria/${p.slug}/`,
+    priority: '0.7',
+    changefreq: 'monthly',
+  })),
+]
+
+const allRoutes = [...staticRoutes, ...serviceRoutes, ...galleryRoutes]
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
