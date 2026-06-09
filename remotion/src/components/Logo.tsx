@@ -1,5 +1,7 @@
 import { Img, staticFile, useCurrentFrame, useVideoConfig, spring, interpolate } from 'remotion'
 
+const SIZE = 900
+
 export const Logo: React.FC = () => {
   const frame = useCurrentFrame()
   const { fps } = useVideoConfig()
@@ -20,7 +22,7 @@ export const Logo: React.FC = () => {
     extrapolateRight: 'clamp',
   })
 
-  const glowIntensity = interpolate(frame, [0, 15, 30], [0, 22, 10], {
+  const glowIntensity = interpolate(frame, [0, 15, 30], [0, 24, 12], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   })
@@ -29,7 +31,7 @@ export const Logo: React.FC = () => {
     <div
       style={{
         position: 'absolute',
-        top: 600,
+        top: 360,
         left: 0,
         right: 0,
         display: 'flex',
@@ -39,9 +41,9 @@ export const Logo: React.FC = () => {
       }}
     >
       <Img
-        src={staticFile('logo.png')}
+        src={staticFile('brand-logo.png')}
         style={{
-          width: 540,
+          width: SIZE,
           height: 'auto',
           filter: `drop-shadow(0 0 ${glowIntensity}px #1d4ed8) drop-shadow(0 0 ${glowIntensity * 1.5}px #3b82f6)`,
         }}
