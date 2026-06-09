@@ -22,6 +22,7 @@
   },
   "scripts": {
     "dev": "remotion studio",
+    "render": "remotion render src/index.ts Intro out/intro.mp4",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc"
