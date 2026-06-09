@@ -41,7 +41,7 @@ export const Logo: React.FC = () => {
       <Img
         src={staticFile('logo.png')}
         style={{
-          width: 160,
+          width: 540,
           height: 'auto',
           filter: `drop-shadow(0 0 ${glowIntensity}px #1d4ed8) drop-shadow(0 0 ${glowIntensity * 1.5}px #3b82f6)`,
         }}

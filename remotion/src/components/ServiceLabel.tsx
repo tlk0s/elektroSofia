@@ -3,6 +3,8 @@ import { fontFamily } from '../lib/fonts'
 import { config } from '../lib/config'
 
 export const ServiceLabel: React.FC = () => {
+  if (!config.service) return null
+
   const frame = useCurrentFrame()
   const { fps } = useVideoConfig()
 
