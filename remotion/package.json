@@ -8,11 +8,9 @@
   "dependencies": {
     "@remotion/cli": "4.0.474",
     "@remotion/google-fonts": "4.0.474",
-    "@remotion/tailwind-v4": "4.0.474",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "remotion": "4.0.474",
-    "tailwindcss": "4.0.0"
+    "remotion": "4.0.474"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.474",
