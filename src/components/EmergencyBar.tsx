@@ -47,15 +47,13 @@ export default function EmergencyBar({ phone, phoneDisplay, email }: Props) {
         <div className="flex items-center gap-2 flex-shrink-0">
           <a
             href={`tel:${phone}`}
-            className="inline-flex items-center gap-1.5 bg-white text-red-700 font-extrabold text-sm px-4 py-2 rounded-lg hover:bg-red-50 transition-colors animate-pulse"
-            aria-label={`Обади се: ${phoneDisplay}`}
+            className="inline-flex items-center gap-1.5 bg-white text-red-800 font-extrabold text-sm px-4 py-2 rounded-lg hover:bg-red-50 transition-colors animate-pulse"
           >
             📞 Обади се — 24/7
           </a>
           <a
             href={`tel:${phone}`}
             className="inline-flex items-center gap-1.5 bg-red-900 text-white font-extrabold text-sm px-3 py-2 rounded-lg hover:bg-red-800 transition-colors"
-            aria-label={`Спешно обаждане — Авария: ${phoneDisplay}`}
           >
             🆘 АВАРИЯ
           </a>

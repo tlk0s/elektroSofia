@@ -17,12 +17,12 @@ export default function CallButtons({ size = 'lg', vertical = false }: Props) {
   const iconPx = isLg ? 28 : 22
 
   const phoneClass = isLg
-    ? 'inline-flex items-center gap-2 font-extrabold px-6 py-3 rounded-xl transition-colors text-white bg-red-600 hover:bg-red-500 text-base animate-pulse'
-    : 'inline-flex items-center gap-2 font-extrabold px-4 py-2.5 rounded-lg transition-colors text-white bg-red-600 hover:bg-red-500 text-sm animate-pulse'
+    ? 'inline-flex items-center gap-2 font-extrabold px-6 py-3 rounded-xl transition-colors text-white bg-red-700 hover:bg-red-600 text-base animate-pulse'
+    : 'inline-flex items-center gap-2 font-extrabold px-4 py-2.5 rounded-lg transition-colors text-white bg-red-700 hover:bg-red-600 text-sm animate-pulse'
 
   const sosClass = isLg
-    ? 'inline-flex items-center gap-2 font-extrabold px-5 py-3 rounded-xl transition-colors text-white bg-red-800 hover:bg-red-700 text-base'
-    : 'inline-flex items-center gap-2 font-extrabold px-3 py-2.5 rounded-lg transition-colors text-white bg-red-800 hover:bg-red-700 text-sm'
+    ? 'inline-flex items-center gap-2 font-extrabold px-5 py-3 rounded-xl transition-colors text-white bg-red-900 hover:bg-red-800 text-base'
+    : 'inline-flex items-center gap-2 font-extrabold px-3 py-2.5 rounded-lg transition-colors text-white bg-red-900 hover:bg-red-800 text-sm'
 
   const iconClass = isLg
     ? 'inline-flex items-center justify-center w-11 h-11 rounded-xl transition-opacity hover:opacity-80'
@@ -30,13 +30,12 @@ export default function CallButtons({ size = 'lg', vertical = false }: Props) {
 
   return (
     <div className={`flex ${vertical ? 'flex-col items-start' : 'flex-wrap items-center'} gap-2`}>
-      <a href={`tel:${PHONE}`} className={phoneClass} aria-label={`Обади се: ${PHONE_DISPLAY}`}>
+      <a href={`tel:${PHONE}`} className={phoneClass}>
         📞 Обади се — 24/7
       </a>
       <a
         href={`tel:${PHONE}`}
         className={sosClass}
-        aria-label={`Спешно обаждане — Авария: ${PHONE_DISPLAY}`}
       >
         🆘 АВАРИЯ
       </a>
