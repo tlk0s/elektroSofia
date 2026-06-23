@@ -2,6 +2,7 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 import Image from 'next/image'
 import CallButtons from '@/components/CallButtons'
+import { assetPath } from '@/lib/metadata'
 
 interface HeroContent {
   headline: string
@@ -33,7 +34,7 @@ export default function Hero() {
         </div>
         <div className="flex-shrink-0 w-72 h-72 relative rounded-2xl overflow-hidden shadow-2xl">
           <Image
-            src={c.imageUrl}
+            src={c.imageUrl.startsWith('/') ? assetPath(c.imageUrl) : c.imageUrl}
             alt={c.imageAlt}
             fill
             className="object-cover"
