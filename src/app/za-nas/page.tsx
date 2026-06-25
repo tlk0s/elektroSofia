@@ -2,7 +2,7 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { generateMeta, PHONE_DISPLAY } from '@/lib/metadata'
+import { generateMeta, PHONE_DISPLAY, assetPath } from '@/lib/metadata'
 import CallButtons from '@/components/CallButtons'
 
 interface ZaNasContent {
@@ -34,7 +34,7 @@ export default function ZaNasPage() {
       <div className="flex flex-col md:flex-row gap-8 items-start mb-10">
         <div className="w-full md:w-64 h-72 relative rounded-2xl overflow-hidden flex-shrink-0 shadow-lg">
           <Image
-            src={c.imageUrl}
+            src={c.imageUrl.startsWith('/') ? assetPath(c.imageUrl) : c.imageUrl}
             alt={c.imageAlt}
             fill
             className="object-cover"
