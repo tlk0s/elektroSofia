@@ -23,7 +23,7 @@ function loadBusiness(): BusinessContent {
 
 const business = loadBusiness()
 
-export const BASE_URL = 'https://elektrotehnik-sofia.bg'
+export const BASE_URL = 'https://elektrouslugisofia.bg'
 export const PHONE = business.phone
 export const PHONE_DISPLAY = business.phoneDisplay
 export const EMAIL = business.email

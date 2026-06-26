@@ -15,8 +15,8 @@ const breadcrumbSchemaJson = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Начало', item: 'https://elektrotehnik-sofia.bg/' },
-    { '@type': 'ListItem', position: 2, name: 'Услуги', item: 'https://elektrotehnik-sofia.bg/uslugi/' },
+    { '@type': 'ListItem', position: 1, name: 'Начало', item: 'https://elektrouslugisofia.bg/' },
+    { '@type': 'ListItem', position: 2, name: 'Услуги', item: 'https://elektrouslugisofia.bg/uslugi/' },
   ],
 })
 

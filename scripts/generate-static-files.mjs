@@ -15,7 +15,7 @@ function read(file) {
   return JSON.parse(readFileSync(join(root, 'content', file), 'utf-8'))
 }
 
-const BASE_URL = 'https://elektrotehnik-sofia.bg'
+const BASE_URL = 'https://elektrouslugisofia.bg'
 
 const business = read('business.json')
 const hero = read('hero.json')

@@ -32,9 +32,9 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Начало', item: 'https://elektrotehnik-sofia.bg/' },
-      { '@type': 'ListItem', position: 2, name: 'Услуги', item: 'https://elektrotehnik-sofia.bg/uslugi/' },
-      { '@type': 'ListItem', position: 3, name: service.title, item: `https://elektrotehnik-sofia.bg/uslugi/${service.slug}/` },
+      { '@type': 'ListItem', position: 1, name: 'Начало', item: 'https://elektrouslugisofia.bg/' },
+      { '@type': 'ListItem', position: 2, name: 'Услуги', item: 'https://elektrouslugisofia.bg/uslugi/' },
+      { '@type': 'ListItem', position: 3, name: service.title, item: `https://elektrouslugisofia.bg/uslugi/${service.slug}/` },
     ],
   })
 
