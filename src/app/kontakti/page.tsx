@@ -36,7 +36,7 @@ export default function KontaktiPage() {
         </div>
         <div className="rounded-xl overflow-hidden shadow-lg" style={{ minHeight: '280px' }}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46802.06438432044!2d23.2688!3d42.6977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8682cb317bf5%3A0x400a01269bf5e60!2sSofia%2C%20Bulgaria!5e0!3m2!1sen!2sbg!4v1"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.0902209494593!2d23.327362277382587!3d42.680631171165004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa85a7d0eb0121%3A0x260af7766ae78248!2z0LYu0LouINCb0L7Qt9C10L3QtdGGLCDRg9C7LiDigJ7Qr9C90LrQviDQodC-0YTQuNC50YHQutC4INCS0L7QudCy0L7QtNCw4oCcLCAxMTY0INCh0L7RhNC40Y8sINCR0YrQu9Cz0LDRgNC40Y8!5e0!3m2!1sbg!2sus!4v1782575185496!5m2!1sbg!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>"
             width="100%"
             height="280"
             style={{ border: 0 }}
