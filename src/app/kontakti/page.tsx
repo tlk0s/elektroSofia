@@ -37,7 +37,6 @@ export default function KontaktiPage() {
         <div className="rounded-xl overflow-hidden shadow-lg" style={{ minHeight: '280px' }}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.245233368819!2d23.32218497738266!3d42.67732297916654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa850125da026d%3A0xc3c9071060bb1ee7!2z0YPQuy4g0JnQvtCw0L0g0JXQutC30LDRgNGFINCwIDEzLCDQti4NCi4g0JvQvtC30LXQvdC10YYsIDE0MjEg0KHQvtGE0LjRjw!5m2!1sbg!2sbg"
-" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>"
             width="100%"
             height="280"
             style={{ border: 0 }}
