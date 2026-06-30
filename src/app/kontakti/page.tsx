@@ -36,7 +36,7 @@ export default function KontaktiPage() {
         </div>
         <div className="rounded-xl overflow-hidden shadow-lg" style={{ minHeight: '280px' }}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.245233368819!2d23.32218497738266!3d42.67734737116522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa85a9fdacc409%3A0x367f4182727ab67d!2z0LYu0LouINCb0L7Qt9C10L3QtdGGLCDRg9C7LiDigJ7QmdC-0LDQvSDQldC60LfQsNGA0YXigJwgMTMsIDE0MjEg0KHQvtGE0LjRjywg0JHRitC70LPQsNGA0LjRjw!5e0!3m2!1sbg!2sus!4v1782840302021!5m2!1sbg!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.245233368819!2d23.32218497738266!3d42.67734737116522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa85a9fdacc409%3A0x367f4182727ab67d!2z0LYu0LouINCb0L7Qt9C10L3QtdGGLCDRg9C7LiDigJ7QmdC-0LDQvSDQldC60LfQsNGA0YXigJwgMTMsIDE0MjEg0KHQvtGE0LjRjywg0JHRitC70LPQsNGA0LjRjw!5e0!3m2!1sbg!2sus!4v1782840302021!5m2!1sbg!2sus"
             width="100%"
             height="280"
             style={{ border: 0 }}
