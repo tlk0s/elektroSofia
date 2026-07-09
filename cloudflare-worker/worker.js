@@ -17,12 +17,17 @@ async function handleRequest(request) {
           const href = el.getAttribute('href')
           if (!href) return
           try {
-            const cssUrl = new URL(href, url.origin).toString()
-            const cssRes = await fetch(cssUrl)
-            if (cssRes.ok) {
-              const css = await cssRes.text()
-              el.replace(`<style>${css}</style>`, { html: true })
-            }
+            const cssUrl = new URL(href, url.origin)
+            // SSRF prevention: only fetch same-origin stylesheets
+            if (cssUrl.origin !== url.origin) return
+            const cssRes = await fetch(cssUrl.toString())
+            if (!cssRes.ok) return
+            const ct = cssRes.headers.get('content-type') || ''
+            if (!ct.startsWith('text/css')) return
+            const css = await cssRes.text()
+            // XSS prevention: escape </style closing tag in fetched CSS
+            const safeCss = css.replace(/<\/style/gi, '<\\/style')
+            el.replace(`<style>${safeCss}</style>`, { html: true })
           } catch {}
         }
       })
