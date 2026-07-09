@@ -37,7 +37,7 @@ export default function CallButtons({ size = 'lg', vertical = false }: Props) {
         href={`tel:${PHONE}`}
         className={sosClass}
       >
-        🆘 АВАРИЯ
+        🆘 {PHONE_DISPLAY}
       </a>
       <a
         href={`viber://chat?number=%2B${whatsappNumber}`}
