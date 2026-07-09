@@ -24,6 +24,9 @@ const gallery = read('gallery.json')
 const zaНас = read('za-nas.json')
 const howWeWork = read('how-we-work.json')
 const areas = read('service-areas.json')
+const areasDetail = read('service-areas-detail.json')
+const servicesDetail = read('services-detail.json')
+const caseStudies = read('case-studies.json')
 const faq = read('faq.json')
 
 // ─── sitemap.xml ────────────────────────────────────────────────────────────
@@ -87,6 +90,18 @@ const faqList = faq.faqs
   .map((f) => `### ${f.question}\n\n${f.answer}`)
   .join('\n\n')
 
+const servicesDetailList = servicesDetail.services
+  .map((s) => `### ${s.title}\n\n${s.detail}`)
+  .join('\n\n')
+
+const areasDetailList = areasDetail.areas
+  .map((a) => `### Електротехник ${a.name}\n\n${a.description}`)
+  .join('\n\n')
+
+const caseList = caseStudies.cases
+  .map((c) => `### ${c.title}\n\n${c.description}`)
+  .join('\n\n')
+
 const llmsTxt = `# ${business.name}
 
 > ${hero.headline} — ${hero.subheadline}
@@ -119,6 +134,18 @@ ${credList}
 ## Зони на обслужване
 
 ${areas.areas.join(', ')}
+
+## Електротехник по квартали в София
+
+${areasDetailList}
+
+## Подробно за услугите
+
+${servicesDetailList}
+
+## Реализирани проекти и казуси
+
+${caseList}
 
 ## Често задавани въпроси
 
