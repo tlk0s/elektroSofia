@@ -8,7 +8,7 @@
       "metaDescription": "Николов инжинеринг — цялостна нова електрическа инсталация в новострояща се жилищна сграда в жк Люлин, София. Окабеляване, табла, разклонителни кутии, пожароизвестители по БДС EN 60364.",
       "date": "2026-06",
       "service": "nova-instalaciya-sofia",
-      "coverImage": "galeria/nova-instalaciya-lyulin-sgrada-2026/cover.jpg",
+      "coverImage": "galeria/nova-instalaciya-lyulin-sgrada-2026/cover.webp",
       "images": [
         {
           "file": "galeria/nova-instalaciya-lyulin-sgrada-2026/suteren-koridor-trubi-tavan.jpg",
@@ -51,7 +51,7 @@
           "caption": "Пожароизвестител и осветителен извод на тавана — монтирани по норма"
         },
         {
-          "file": "galeria/nova-instalaciya-lyulin-sgrada-2026/cover.jpg",
+          "file": "galeria/nova-instalaciya-lyulin-sgrada-2026/cover.webp",
           "alt": "Цялостна нова електрическа инсталация в стая — тръби, изводи, пожароизвестител, Люлин",
           "caption": "Завършена инсталация в стая — тръби по тавана, изводи за контакти и пожароизвестител"
         },
@@ -75,10 +75,10 @@
       "metaDescription": "Николов инжинеринг — монтаж на осветление в луксозна къща в жк Надежда, София. LED луни, полилеи, релсови системи, pendant лампи и лентово осветление от лицензиран електротехник.",
       "date": "2026-06",
       "service": "montaj-osvetlenie-sofia",
-      "coverImage": "galeria/montaj-osvetlenie-nadezhda-2026/cover.jpg",
+      "coverImage": "galeria/montaj-osvetlenie-nadezhda-2026/cover.webp",
       "images": [
         {
-          "file": "galeria/montaj-osvetlenie-nadezhda-2026/cover.jpg",
+          "file": "galeria/montaj-osvetlenie-nadezhda-2026/cover.webp",
           "alt": "LED луни и лентово осветление в корниз на антре — монтаж Надежда София",
           "caption": "Антре с LED луни и лентово осветление в корниза — ефектно и енергоефективно"
         },
