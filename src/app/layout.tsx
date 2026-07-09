@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <EmergencyBar phone={PHONE} phoneDisplay={PHONE_DISPLAY} email={EMAIL} />
+        <GoogleAnalytics gaId="G-79WSZWBR9Z" />
       </body>
     </html>
   )
