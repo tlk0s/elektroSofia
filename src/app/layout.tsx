@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 import Header from '@/components/Header'
@@ -8,8 +7,6 @@ import SchemaOrg from '@/components/SchemaOrg'
 import EmergencyBar from '@/components/EmergencyBar'
 import { BASE_URL, PHONE, PHONE_DISPLAY, EMAIL } from '@/lib/metadata'
 import { BASE_PATH } from '@/lib/asset-path'
-
-const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
 export const metadata: Metadata = {
   title: {
@@ -35,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SchemaOrg />
         <link rel="sitemap" type="application/xml" href={`${BASE_PATH}/sitemap.xml`} />
       </head>
-      <body className={`${inter.className} bg-slate-50 pb-20`}>
+      <body className="bg-slate-50 pb-20">
         <Header />
         <main>{children}</main>
         <Footer />
