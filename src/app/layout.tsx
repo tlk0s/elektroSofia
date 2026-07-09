@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <EmergencyBar phone={PHONE} phoneDisplay={PHONE_DISPLAY} email={EMAIL} />
-        <GoogleAnalytics gaId="G-79WSZWBR9Z" />
+        <GoogleAnalytics gaId="G-VE056CYH3H" />
       </body>
     </html>
   )
