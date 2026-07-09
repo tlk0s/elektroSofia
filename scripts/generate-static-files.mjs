@@ -24,6 +24,7 @@ const gallery = read('gallery.json')
 const zaНас = read('za-nas.json')
 const howWeWork = read('how-we-work.json')
 const areas = read('service-areas.json')
+const faq = read('faq.json')
 
 // ─── sitemap.xml ────────────────────────────────────────────────────────────
 
@@ -82,6 +83,10 @@ const stepList = howWeWork.steps
 
 const credList = zaНас.credentials.map((c) => `- ${c}`).join('\n')
 
+const faqList = faq.faqs
+  .map((f) => `### ${f.question}\n\n${f.answer}`)
+  .join('\n\n')
+
 const llmsTxt = `# ${business.name}
 
 > ${hero.headline} — ${hero.subheadline}
@@ -114,6 +119,10 @@ ${credList}
 ## Зони на обслужване
 
 ${areas.areas.join(', ')}
+
+## Често задавани въпроси
+
+${faqList}
 
 ## Links
 
