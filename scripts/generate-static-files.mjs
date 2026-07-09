@@ -115,9 +115,9 @@ ${credList}
 
 ${areas.areas.join(', ')}
 
-## Страници
+## Links
 
-${allRoutes.map((r) => `- ${BASE_URL}${r.path}`).join('\n')}
+${allRoutes.map((r) => `- [${r.path === '/' ? 'Начало' : r.path}](${BASE_URL}${r.path})`).join('\n')}
 `
 
 writeFileSync(join(outDir, 'llms.txt'), llmsTxt)
