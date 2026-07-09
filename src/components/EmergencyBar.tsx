@@ -55,7 +55,7 @@ export default function EmergencyBar({ phone, phoneDisplay, email }: Props) {
             href={`tel:${phone}`}
             className="inline-flex items-center gap-1.5 bg-red-900 text-white font-extrabold text-sm px-3 py-2 rounded-lg hover:bg-red-800 transition-colors"
           >
-            🆘 АВАРИЯ
+            🆘 {phoneDisplay}
           </a>
           <a
             href={`viber://chat?number=%2B${whatsappNumber}`}
