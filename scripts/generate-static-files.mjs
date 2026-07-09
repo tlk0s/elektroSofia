@@ -165,6 +165,9 @@ const robotsTxt = `User-agent: *
 Allow: /
 
 Sitemap: ${BASE_URL}/sitemap.xml
+
+# AI content usage preferences
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
 `
 
 writeFileSync(join(outDir, 'robots.txt'), robotsTxt)
