@@ -8,7 +8,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold text-blue-700 shrink-0">
-          <Image src={assetPath('logo.png')} alt="Николов инжинеринг лого" width={42} height={48} />
+          <Image src={assetPath('logo.webp')} alt="Николов инжинеринг лого" width={42} height={48} />
           <span className="hidden sm:inline">Николов инжинеринг</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
