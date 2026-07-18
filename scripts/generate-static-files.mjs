@@ -55,7 +55,13 @@ const galleryRoutes = [
   })),
 ]
 
-const allRoutes = [...staticRoutes, ...serviceRoutes, ...galleryRoutes]
+const aiRoutes = [
+  { path: '/ai-qa.txt',  priority: '0.5', changefreq: 'monthly' },
+  { path: '/llms.txt',   priority: '0.5', changefreq: 'weekly'  },
+  { path: '/auth.md',    priority: '0.4', changefreq: 'monthly' },
+]
+
+const allRoutes = [...staticRoutes, ...serviceRoutes, ...galleryRoutes, ...aiRoutes]
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -154,6 +160,14 @@ ${faqList}
 ## Links
 
 ${allRoutes.map((r) => `- [${r.path === '/' ? 'Начало' : r.path}](${BASE_URL}${r.path})`).join('\n')}
+
+## AI Discovery
+
+- [AI Q&A](${BASE_URL}/ai-qa.txt)
+- [Agent Card](${BASE_URL}/.well-known/agent-card.json)
+- [MCP Server Card](${BASE_URL}/.well-known/mcp/server-card.json)
+- [Agent Skills](${BASE_URL}/.well-known/agent-skills/index.json)
+- [API Catalog](${BASE_URL}/.well-known/api-catalog)
 `
 
 writeFileSync(join(outDir, 'llms.txt'), llmsTxt)
