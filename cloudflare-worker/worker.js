@@ -35,11 +35,11 @@ async function handleRequest(request) {
   const response = await fetch(request)
 
   // Markdown content negotiation — serve text/markdown when requested
-  if (wantsMarkdown && isHtml && response.headers.get('content-type')?.includes('text/html')) {
+  if (wantsMarkdown && isHtml && response.ok && response.headers.get('content-type')?.includes('text/html')) {
     const markdown = await extractMarkdown(response.clone())
     const tokenEstimate = Math.ceil(markdown.length / 4)
     return new Response(markdown, {
-      status: 200,
+      status: response.status,
       headers: {
         'Content-Type': 'text/markdown; charset=utf-8',
         'x-markdown-tokens': String(tokenEstimate),
