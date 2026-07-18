@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Електротехник София",
+  "url": "https://elektrouslugisofia.bg",
+  "description": "Електротехнически услуги в София — ремонт на ел. инсталации, монтаж на осветление, смяна на табла.",
+  "telephone": "+359888000000",
+  "email": "elmaistor1@gmail.com",
+  "areaServed": {
+    "@type": "City",
+    "name": "София",
+    "sameAs": "https://www.wikidata.org/wiki/Q472"
+  },
+  "serviceType": [
+    "Ремонт на електроинсталация",
+    "Монтаж на осветление",
+    "Смяна на ел. табло",
+    "Диагностика на ел. проблеми",
+    "Авариен електротехник"
+  ],
+  "agent": {
+    "protocol": "none",
+    "discovery": "dns-aid",
+    "contact": "mailto:elmaistor1@gmail.com"
+  }
+}
