@@ -1,5 +1,16 @@
 {
   "issuer": "https://elektrouslugisofia.bg",
   "no_auth_required": true,
-  "description": "Public informational website — no OAuth authorization server is operated."
+  "description": "Public informational website — no OAuth authorization server is operated.",
+  "agent_auth": {
+    "skill": "https://elektrouslugisofia.bg/.well-known/agent-skills/index.json",
+    "register_uri": "mailto:elmaistor1@gmail.com",
+    "methods": [
+      {
+        "type": "anonymous",
+        "credential_types_supported": ["none"],
+        "description": "No credentials required — all content is publicly accessible."
+      }
+    ]
+  }
 }

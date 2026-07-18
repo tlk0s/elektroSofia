@@ -1,8 +1,8 @@
 {
   "resource": "https://elektrouslugisofia.bg",
-  "authorization_servers": [],
+  "authorization_servers": ["https://elektrouslugisofia.bg"],
   "scopes_supported": [],
-  "bearer_methods_supported": [],
+  "bearer_methods_supported": ["header"],
   "no_auth_required": true,
   "description": "Public informational website — no authentication required to access content."
 }

@@ -26,13 +26,32 @@ async function extractMarkdown(response) {
   return chunks.join('').replace(/\n{3,}/g, '\n\n').trim()
 }
 
+const WELL_KNOWN_CONTENT_TYPES = {
+  '/api-catalog': 'application/linkset+json',
+}
+const WELL_KNOWN_PREFIX = '/.well-known/'
+
+function wellKnownContentType(pathname) {
+  const key = pathname.slice(WELL_KNOWN_PREFIX.length - 1)
+  return WELL_KNOWN_CONTENT_TYPES[key] || 'application/json'
+}
+
 async function handleRequest(request) {
   const url = new URL(request.url)
   const isStaticAsset = /\.(js|css|png|webp|jpg|jpeg|gif|svg|woff2|woff|ico)$/.test(url.pathname)
   const isHtml = !isStaticAsset && !url.pathname.includes('.')
+  const isWellKnownJson = url.pathname.startsWith(WELL_KNOWN_PREFIX) && !url.pathname.endsWith('.json')
   const wantsMarkdown = (request.headers.get('Accept') || '').includes('text/markdown')
 
   const response = await fetch(request)
+
+  // Fix Content-Type for extensionless .well-known files served by GitHub Pages
+  if (isWellKnownJson && response.ok) {
+    const newResponse = new Response(response.body, response)
+    newResponse.headers.set('Content-Type', wellKnownContentType(url.pathname))
+    newResponse.headers.set('Cache-Control', 'public, max-age=3600, s-maxage=86400')
+    return newResponse
+  }
 
   // Markdown content negotiation — serve text/markdown when requested
   if (wantsMarkdown && isHtml && response.ok && response.headers.get('content-type')?.includes('text/html')) {
