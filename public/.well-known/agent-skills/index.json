@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "agent-card",
+      "type": "skill-md",
+      "description": "Business identity, services, and contact details for Николов инжинеринг — licensed electrician in Sofia.",
+      "url": "https://elektrouslugisofia.bg/.well-known/agent-card.json",
+      "digest": "sha256:157a8650b8f30251e3b18924d21964506576922063ac2303529e61c8698299e6"
+    },
+    {
+      "name": "api-catalog",
+      "type": "skill-md",
+      "description": "RFC 9727 API catalog listing available service description and documentation endpoints.",
+      "url": "https://elektrouslugisofia.bg/.well-known/api-catalog",
+      "digest": "sha256:165336cdb5bc21734d19381e7413767ce903173b7525fd3d854efeaebf4b2395"
+    },
+    {
+      "name": "mcp-server-card",
+      "type": "skill-md",
+      "description": "MCP Server Card (SEP-1649) exposing server info and capabilities for agent discovery.",
+      "url": "https://elektrouslugisofia.bg/.well-known/mcp/server-card.json",
+      "digest": "sha256:9f046dfb592b0fc0db7160527ea17c6dcdb8631a0c74622458dd2a57687726eb"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://elektrouslugisofia.bg",
+      "https://www.iana.org/assignments/linkrelations/service-desc": [
+        { "href": "https://elektrouslugisofia.bg/.well-known/agent-card.json", "type": "application/json" }
+      ],
+      "https://www.iana.org/assignments/linkrelations/service-doc": [
+        { "href": "https://elektrouslugisofia.bg/uslugi/", "type": "text/html" }
+      ],
+      "https://www.iana.org/assignments/linkrelations/status": [
+        { "href": "https://elektrouslugisofia.bg/", "type": "text/html" }
+      ]
+    }
+  ]
+}

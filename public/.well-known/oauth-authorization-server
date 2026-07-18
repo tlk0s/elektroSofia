@@ -1,0 +1,5 @@
+{
+  "issuer": "https://elektrouslugisofia.bg",
+  "no_auth_required": true,
+  "description": "Public informational website — no OAuth authorization server is operated."
+}
