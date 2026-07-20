@@ -2,7 +2,7 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { generateMeta, PHONE_DISPLAY, assetPath } from '@/lib/metadata'
+import { generateMeta, PHONE_DISPLAY, BASE_URL, business, assetPath } from '@/lib/metadata'
 import CallButtons from '@/components/CallButtons'
 
 interface ZaNasContent {
@@ -21,14 +21,40 @@ function loadContent(): ZaNasContent {
 }
 
 export const metadata: Metadata = generateMeta({
-  title: 'За нас | Николов инжинеринг | Електротехник София',
+  title: 'За нас — Електротехник София',
   description: `Николов инжинеринг — лицензиран електротехник в София с 15+ години опит. 500+ доволни клиента. ${PHONE_DISPLAY}`,
   path: '/za-nas',
+})
+
+// Static schema object — no user input, safe for dangerouslySetInnerHTML
+const aboutSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Electrician',
+  name: 'Николов инжинеринг',
+  url: BASE_URL,
+  telephone: business.phone,
+  email: business.email,
+  foundingDate: '2020',
+  numberOfEmployees: { '@type': 'QuantitativeValue', value: 3 },
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'ул. Йоан Екзарх 13',
+    addressLocality: 'София',
+    postalCode: '1421',
+    addressCountry: 'BG',
+  },
+  identifier: {
+    '@type': 'PropertyValue',
+    name: 'Лиценз',
+    value: business.licenseNumber,
+  },
 })
 
 export default function ZaNasPage() {
   const c = loadContent()
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: aboutSchema }} />
     <div className="mx-auto max-w-4xl px-4 py-12">
       <h1 className="text-4xl font-bold text-gray-900 mb-6">{c.heading}</h1>
       <div className="flex flex-col md:flex-row gap-8 items-start mb-10">
@@ -62,5 +88,6 @@ export default function ZaNasPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

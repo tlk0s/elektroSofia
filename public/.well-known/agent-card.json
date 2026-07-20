@@ -1,11 +1,19 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Електротехник София",
+  "name": "Николов инжинеринг",
   "url": "https://elektrouslugisofia.bg",
   "description": "Електротехнически услуги в София — ремонт на ел. инсталации, монтаж на осветление, смяна на табла.",
   "telephone": "+359899887752",
   "email": "elmaistor1@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Йоан Екзарх 13",
+    "addressLocality": "София",
+    "addressRegion": "ж.к. Лозенец",
+    "postalCode": "1421",
+    "addressCountry": "BG"
+  },
   "areaServed": {
     "@type": "City",
     "name": "София",
@@ -38,10 +46,6 @@
     {
       "type": "webmcp",
       "url": "https://elektrouslugisofia.bg"
-    },
-    {
-      "type": "mcp",
-      "url": "https://elektrouslugisofia.bg/.well-known/mcp/server-card.json"
     }
   ],
   "agent": {

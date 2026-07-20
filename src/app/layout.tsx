@@ -4,12 +4,12 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import SchemaOrg from '@/components/SchemaOrg'
 import EmergencyBar from '@/components/EmergencyBar'
-import { BASE_URL, PHONE, PHONE_DISPLAY, EMAIL } from '@/lib/metadata'
+import { BASE_URL, PHONE, PHONE_DISPLAY, EMAIL, business } from '@/lib/metadata'
 import { BASE_PATH } from '@/lib/asset-path'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Николов инжинеринг | Електротехник София | +359 88 888 8888',
+    default: 'Електротехник София | Николов инжинеринг',
     template: '%s | Николов инжинеринг',
   },
   description: `Лицензиран електротехник в София. Смяна на табло, нова инсталация, авариен електротехник 24/7. Обадете се: ${PHONE_DISPLAY}`,
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name:'getBusinessInfo',
     description:'Returns the name, address, license number, and operating hours of the electrical contractor.',
     inputSchema:{type:'object',properties:{},required:[]},
-    execute:function(){return Promise.resolve({name:'Николов инжинеринг',address:'гр. София 1421, ж.к Лозенец, ул. Йоан Екзарх 13',license:'ЛТ-0001/2020',hours:{weekdays:'08:00–20:00',saturday:'09:00–17:00',emergency:'24/7'}})}
+    execute:function(){return Promise.resolve({name:'Николов инжинеринг',address:'гр. София 1421, ж.к Лозенец, ул. Йоан Екзарх 13',license:'ЕТ-0001/2020',hours:{weekdays:'08:00–20:00',saturday:'09:00–17:00',emergency:'24/7'}})}
   },{signal:ac.signal});
   mc.registerTool({
     name:'getServices',

@@ -3,13 +3,12 @@
     "name": "Николов инжинеринг — Електротехник София",
     "version": "1.0.0"
   },
-  "endpoint": "https://elektrouslugisofia.bg/mcp",
   "capabilities": {
     "tools": false,
-    "resources": true,
+    "resources": false,
     "prompts": false
   },
-  "description": "Public informational MCP entry point for Николов инжинеринг. Exposes business info, services, and contact details for AI agent discovery.",
+  "description": "Public informational entry point for Николов инжинеринг. Business info, services, and contact details are available via WebMCP tools on the site pages.",
   "contact": {
     "email": "elmaistor1@gmail.com",
     "phone": "+359899887752",
