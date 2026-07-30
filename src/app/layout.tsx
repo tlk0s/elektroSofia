@@ -4,7 +4,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import SchemaOrg from '@/components/SchemaOrg'
 import EmergencyBar from '@/components/EmergencyBar'
-import { BASE_URL, PHONE, PHONE_DISPLAY, EMAIL, business } from '@/lib/metadata'
+import { BASE_URL, PHONE, PHONE_DISPLAY, EMAIL } from '@/lib/metadata'
 import { BASE_PATH } from '@/lib/asset-path'
 
 export const metadata: Metadata = {
