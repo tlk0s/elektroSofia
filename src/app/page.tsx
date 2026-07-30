@@ -5,6 +5,7 @@ import ServiceCard from '@/components/ServiceCard'
 import HowWeWork from '@/components/HowWeWork'
 import Reviews from '@/components/Reviews'
 import ServiceAreas from '@/components/ServiceAreas'
+import Faq from '@/components/Faq'
 import { services } from '@/data/services'
 import { generateMeta, PHONE_DISPLAY } from '@/lib/metadata'
 import CallButtons from '@/components/CallButtons'
@@ -63,6 +64,8 @@ export default function HomePage() {
       <Reviews />
       <ServiceAreas />
 
+      <Faq />
+
       {/* SEO text block — visible to Google, useful to users */}
       <section className="py-14 bg-white">
         <div className="mx-auto max-w-4xl px-4">
@@ -97,6 +100,9 @@ export default function HomePage() {
             </p>
             <p>
               Обадете се за безплатна консултация и оглед. Даваме точна оферта преди да започнем работа — без изненади и скрити такси.
+            </p>
+            <p>
+              <strong>Колко струва електротехник в София?</strong> Цената зависи от вида и обема на работата, но принципът ни е ясен: огледът и диагностиката са безплатни, а точната оферта получавате писмено преди да започнем. Плащате само за реално извършената работа и вложените материали — без такса за посещение при възлагане на ремонта и без скрити разходи. Обадете се за ориентировъчна цена по телефона.
             </p>
           </div>
         </div>

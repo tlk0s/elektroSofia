@@ -78,6 +78,19 @@ export default function SchemaOrg() {
       ],
     },
     priceRange: '$$',
+    // Only emitted when content/business.json has a real `rating` (value + count).
+    // Kept out entirely otherwise — Google forbids ratings from placeholder reviews.
+    ...(business.rating
+      ? {
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: business.rating.value,
+            reviewCount: business.rating.count,
+            bestRating: 5,
+            worstRating: 1,
+          },
+        }
+      : {}),
   }
 
   // Static object — no user input — safe to inject as JSON-LD

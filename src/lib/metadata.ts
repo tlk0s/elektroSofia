@@ -13,6 +13,13 @@ interface BusinessContent {
   licenseNumber: string
   yearsExperience: string
   clientsServed: string
+  /**
+   * Real aggregate rating from genuine reviews. Keep `null` until you have
+   * verifiable reviews (e.g. from Google Business Profile). Google's review
+   * snippet policy forbids ratings built from placeholder/fake reviews, so the
+   * schema below only emits aggregateRating when this is populated.
+   */
+  rating: { value: number; count: number } | null
   workingHours: { weekdays: string; saturday: string; emergency: string }
 }
 
