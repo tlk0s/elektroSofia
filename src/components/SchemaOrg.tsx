@@ -57,7 +57,8 @@ export default function SchemaOrg() {
       { '@type': 'AdministrativeArea', name: 'Оборище' },
     ],
     sameAs: [
-      'https://www.facebook.com/nikolovinzhenering',
+      'https://www.facebook.com/profile.php?id=61592049278115',
+      'https://www.instagram.com/nikolovengineering/',
     ],
     identifier: {
       '@type': 'PropertyValue',

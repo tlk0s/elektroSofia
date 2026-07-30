@@ -28,6 +28,7 @@ const areasDetail = read('service-areas-detail.json')
 const servicesDetail = read('services-detail.json')
 const caseStudies = read('case-studies.json')
 const faq = read('faq.json')
+const kvartali = read('kvartali.json')
 
 // ─── sitemap.xml ────────────────────────────────────────────────────────────
 
@@ -55,13 +56,16 @@ const galleryRoutes = [
   })),
 ]
 
-const aiRoutes = [
-  { path: '/ai-qa.txt',  priority: '0.5', changefreq: 'monthly' },
-  { path: '/llms.txt',   priority: '0.5', changefreq: 'weekly'  },
-  { path: '/auth.md',    priority: '0.4', changefreq: 'monthly' },
+const kvartaliRoutes = [
+  { path: '/kvartali/', priority: '0.8', changefreq: 'monthly' },
+  ...kvartali.kvartali.map((k) => ({
+    path: `/kvartali/${k.slug}/`,
+    priority: '0.7',
+    changefreq: 'monthly',
+  })),
 ]
 
-const allRoutes = [...staticRoutes, ...serviceRoutes, ...galleryRoutes, ...aiRoutes]
+const allRoutes = [...staticRoutes, ...serviceRoutes, ...kvartaliRoutes, ...galleryRoutes]
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
