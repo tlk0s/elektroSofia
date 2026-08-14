@@ -17,12 +17,12 @@ export default function CallButtons({ size = 'lg', vertical = false }: Props) {
   const iconPx = isLg ? 28 : 22
 
   const phoneClass = isLg
-    ? 'inline-flex items-center gap-2 font-extrabold px-6 py-3 rounded-xl transition-colors text-white bg-red-800 hover:bg-red-700 text-base animate-pulse'
-    : 'inline-flex items-center gap-2 font-extrabold px-4 py-2.5 rounded-lg transition-colors text-white bg-red-800 hover:bg-red-700 text-sm animate-pulse'
+    ? 'inline-flex items-center gap-2 font-extrabold px-5 py-3 rounded-xl transition-colors text-white bg-red-800 hover:bg-red-700 text-sm sm:text-base animate-pulse'
+    : 'inline-flex items-center gap-2 font-extrabold px-3 py-2.5 rounded-lg transition-colors text-white bg-red-800 hover:bg-red-700 text-sm animate-pulse'
 
   const sosClass = isLg
-    ? 'inline-flex items-center gap-2 font-extrabold px-5 py-3 rounded-xl transition-colors text-white bg-red-900 hover:bg-red-800 text-base'
-    : 'inline-flex items-center gap-2 font-extrabold px-3 py-2.5 rounded-lg transition-colors text-white bg-red-900 hover:bg-red-800 text-sm'
+    ? 'hidden sm:inline-flex items-center gap-2 font-extrabold px-4 py-3 rounded-xl transition-colors text-white bg-red-900 hover:bg-red-800 text-sm sm:text-base'
+    : 'hidden sm:inline-flex items-center gap-2 font-extrabold px-3 py-2.5 rounded-lg transition-colors text-white bg-red-900 hover:bg-red-800 text-sm'
 
   const iconClass = isLg
     ? 'inline-flex items-center justify-center w-11 h-11 rounded-xl transition-opacity hover:opacity-80'

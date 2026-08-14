@@ -32,7 +32,7 @@ export default function Hero() {
           <p className="text-blue-100 font-semibold mb-3">{c.ctaButton}</p>
           <CallButtons size="lg" />
         </div>
-        <div className="flex-shrink-0 w-72 h-72 relative rounded-2xl overflow-hidden shadow-2xl">
+        <div className="hidden sm:block flex-shrink-0 w-60 h-60 md:w-72 md:h-72 relative rounded-2xl overflow-hidden shadow-2xl mx-auto md:mx-0">
           <Image
             src={c.imageUrl.startsWith('/') ? assetPath(c.imageUrl) : c.imageUrl}
             alt={c.imageAlt}

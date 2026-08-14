@@ -33,27 +33,22 @@ export default function EmergencyBar({ phone, phoneDisplay, email }: Props) {
       aria-label="Авариен контакт"
       className="fixed bottom-0 left-0 right-0 z-50 bg-red-700 text-white shadow-2xl"
     >
-      <div className="mx-auto max-w-6xl px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <div className="flex items-center gap-3 text-center sm:text-left">
-          <span className="flex items-center gap-1.5 text-sm font-bold whitespace-nowrap">
-            <span className="inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse" aria-hidden="true" />
-            ОНЛАЙН 24/7
-          </span>
-          <span className="text-red-100 text-sm">
-            Авария? Реагираме до 60 мин — денонощно
-          </span>
-        </div>
+      <div className="mx-auto max-w-6xl px-3 py-2 flex flex-wrap items-center justify-between gap-2">
+        <span className="flex items-center gap-1.5 text-xs font-bold shrink-0">
+          <span className="inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse" aria-hidden="true" />
+          ОНЛАЙН 24/7
+        </span>
 
-        <div className="flex items-center gap-2 flex-shrink-0">
+        <div className="flex items-center gap-1.5 flex-wrap">
           <a
             href={`tel:${phone}`}
-            className="inline-flex items-center gap-1.5 bg-white text-red-800 font-extrabold text-sm px-4 py-2 rounded-lg hover:bg-red-50 transition-colors animate-pulse"
+            className="inline-flex items-center gap-1 bg-white text-red-800 font-extrabold text-sm px-3 py-2 rounded-lg hover:bg-red-50 transition-colors animate-pulse"
           >
             📞 Обади се — 24/7
           </a>
           <a
             href={`tel:${phone}`}
-            className="inline-flex items-center gap-1.5 bg-red-900 text-white font-extrabold text-sm px-3 py-2 rounded-lg hover:bg-red-800 transition-colors"
+            className="hidden sm:inline-flex items-center gap-1 bg-red-900 text-white font-extrabold text-sm px-3 py-2 rounded-lg hover:bg-red-800 transition-colors"
           >
             🆘 {phoneDisplay}
           </a>
