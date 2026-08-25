@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 describe('Footer', () => {
   it('renders the business name', () => {
     render(<Footer />)
-    expect(screen.getByText(/николов инжинеринг/i)).toBeInTheDocument()
+    expect(screen.getByText(/николов инженеринг/i)).toBeInTheDocument()
   })
 
   it('phone number links to tel:', () => {
