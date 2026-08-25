@@ -22,7 +22,7 @@ function loadContent(): ZaNasContent {
 
 export const metadata: Metadata = generateMeta({
   title: 'За нас — Електротехник София',
-  description: `Николов инжинеринг — лицензиран електротехник в София с 15+ години опит. 500+ доволни клиента. ${PHONE_DISPLAY}`,
+  description: `Николов инженеринг — лицензиран електротехник в София с 15+ години опит. 500+ доволни клиента. ${PHONE_DISPLAY}`,
   path: '/za-nas',
 })
 
@@ -30,7 +30,7 @@ export const metadata: Metadata = generateMeta({
 const aboutSchema = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Electrician',
-  name: 'Николов инжинеринг',
+  name: 'Николов инженеринг',
   url: BASE_URL,
   telephone: business.phone,
   email: business.email,
