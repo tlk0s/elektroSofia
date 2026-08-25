@@ -22,7 +22,7 @@ function loadContent(): ZaNasContent {
 
 export const metadata: Metadata = generateMeta({
   title: 'За нас — Електротехник София',
-  description: `Николов инженеринг — лицензиран електротехник в София с 15+ години опит. 500+ доволни клиента. ${PHONE_DISPLAY}`,
+  description: `Николов инженеринг — лицензиран електротехник в София с 15+ години опит. 500+ доволни клиенти. ${PHONE_DISPLAY}`,
   path: '/za-nas',
 })
 
