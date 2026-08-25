@@ -4,7 +4,7 @@
     {
       "name": "agent-card",
       "type": "skill-md",
-      "description": "Business identity, services, and contact details for Николов инжинеринг — licensed electrician in Sofia.",
+      "description": "Business identity, services, and contact details for Николов инженеринг — licensed electrician in Sofia.",
       "url": "https://elektrouslugisofia.bg/.well-known/agent-card.json",
       "digest": "sha256:157a8650b8f30251e3b18924d21964506576922063ac2303529e61c8698299e6"
     },
