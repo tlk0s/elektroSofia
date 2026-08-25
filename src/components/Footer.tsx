@@ -18,7 +18,7 @@ export default function Footer() {
               href="https://www.facebook.com/profile.php?id=61592049278115"
               target="_blank"
               rel="noopener noreferrer me"
-              aria-label="Facebook — Николов инжинеринг"
+              aria-label="Facebook — Николов инженеринг"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -29,7 +29,7 @@ export default function Footer() {
               href="https://www.instagram.com/nikolovengineering/"
               target="_blank"
               rel="noopener noreferrer me"
-              aria-label="Instagram — Николов инжинеринг"
+              aria-label="Instagram — Николов инженеринг"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
