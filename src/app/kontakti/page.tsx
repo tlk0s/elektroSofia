@@ -4,7 +4,7 @@ import CallButtons from '@/components/CallButtons'
 
 export const metadata: Metadata = generateMeta({
   title: 'Контакти — Електротехник София',
-  description: `Свържете се с Николов инжинеринг — лицензиран електротехник в София. ☎ ${PHONE_DISPLAY}`,
+  description: `Свържете се с Николов инженеринг — лицензиран електротехник в София. ☎ ${PHONE_DISPLAY}`,
   path: '/kontakti',
 })
 
