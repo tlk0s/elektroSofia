@@ -12,7 +12,7 @@ export const metadata: Metadata = generateMeta({
 const contactPageSchema = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
-  name: 'Контакти — Николов инжинеринг',
+  name: 'Контакти — Николов инженеринг',
   url: `${BASE_URL}/kontakti/`,
   mainEntity: {
     '@type': 'Electrician',
@@ -99,7 +99,7 @@ export default function KontaktiPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Карта на София — Николов инжинеринг"
+              title="Карта на София — Николов инженеринг"
             />
           </div>
         </div>
