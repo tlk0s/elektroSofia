@@ -9,8 +9,8 @@ import { BASE_PATH } from '@/lib/asset-path'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Електротехник София | Николов инжинеринг',
-    template: '%s | Николов инжинеринг',
+    default: 'Електротехник София | Николов инженеринг',
+    template: '%s | Николов инженеринг',
   },
   description: `Лицензиран електротехник в София. Смяна на табло, нова инсталация, авариен електротехник 24/7. Обадете се: ${PHONE_DISPLAY}`,
   metadataBase: new URL(BASE_URL),
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name:'getBusinessInfo',
     description:'Returns the name, address, license number, and operating hours of the electrical contractor.',
     inputSchema:{type:'object',properties:{},required:[]},
-    execute:function(){return Promise.resolve({name:'Николов инжинеринг',address:'гр. София 1421, ж.к Лозенец, ул. Йоан Екзарх 13',license:'ЕТ-0001/2020',hours:{weekdays:'08:00–20:00',saturday:'09:00–17:00',emergency:'24/7'}})}
+    execute:function(){return Promise.resolve({name:'Николов инженеринг',address:'гр. София 1421, ж.к Лозенец, ул. Йоан Екзарх 13',license:'ЕТ-0001/2020',hours:{weekdays:'08:00–20:00',saturday:'09:00–17:00',emergency:'24/7'}})}
   },{signal:ac.signal});
   mc.registerTool({
     name:'getServices',
@@ -63,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name:'getContactInfo',
     description:'Returns phone, email and website URL for booking or inquiries.',
     inputSchema:{type:'object',properties:{},required:[]},
-    execute:function(){return Promise.resolve({phone:'+359899887752',email:'elmaistor1@gmail.com',url:'https://elektrouslugisofia.bg',viber:'+359899887752',whatsapp:'+359899887752'})}
+    execute:function(){return Promise.resolve({phone:'+359899887752',email:'electrical.services.98sofia@gmail.com',url:'https://elektrouslugisofia.bg',viber:'+359899887752',whatsapp:'+359899887752'})}
   },{signal:ac.signal});
   window.addEventListener('unload',function(){ac.abort()});
 })()`,
