@@ -13,7 +13,7 @@ import RecentProjects from '@/components/RecentProjects'
 import { gallery } from '@/data/gallery'
 
 export const metadata: Metadata = generateMeta({
-  title: 'Николов инжинеринг | Електротехник София | Смяна Табло, Авариен 24/7',
+  title: 'Николов инженеринг | Електротехник София | Смяна Табло, Авариен 24/7',
   description: `Лицензиран електротехник в София. Смяна на табло, нова електрическа инсталация, авариен електротехник 24/7. Обадете се: ${PHONE_DISPLAY}`,
   path: '/',
 })
